@@ -1,4 +1,7 @@
+import footer from "../components/footer.js"
 
+let container = document.querySelector("#footer");
+container.innerHTML = footer();
 //Login and pop up full functionalities start
 
 document.querySelector("#logo").addEventListener("click", ()=>{
@@ -151,13 +154,15 @@ document.querySelector("#sendOTP").addEventListener("click", ()=>{
 
         let response = await fetch("../database/bookvenue.json");
         let data = await response.json();
-        //console.log(data);
+        console.log(data);
 
         //Writing Function for filter data based on search results
 
-        let filterData = data.filter((el)=>{
+        let filterData = data.filter((el) => {
+            // console.log( el[location] )
             let regex = new RegExp(`^${search_value}`, "gi" );
             return el.location.match(regex) || el.name.match(regex);
+            
         })
 
         console.log(filterData);
@@ -167,7 +172,11 @@ document.querySelector("#sendOTP").addEventListener("click", ()=>{
 
   //===========================================================================>
 
-  let id;
+let id;
+  
+document.getElementById("search").addEventListener("input", () => {
+    debouncingFunction(fetchFunction,1000)
+})
 
   //Creating Debouncing Function
   function debouncingFunction(fetchFunction , delay){

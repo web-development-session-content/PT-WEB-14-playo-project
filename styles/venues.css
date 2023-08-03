@@ -102,11 +102,12 @@
     #close{
         height: 27px;
         position: absolute;
-        right: 20%;
-        top: 17.5%;
+        right: 22%;
+        top: 25.5%;
         border: 2px solid white;
         border-radius: 50%;
         cursor: pointer;
+        /* width: 10%; */
     }
     
     #modal_container.show{
@@ -225,7 +226,7 @@
         font-size: 36px;
         letter-spacing: 0.5px;
         line-height: 46.8px;
-        color: white;
+        color: rgb(0, 0, 0);
         margin-right: 7px;
         font-weight: 300;
      } 
@@ -234,10 +235,13 @@
         font-size: 36px;
         letter-spacing: 0.5px;
         line-height: 46.8px;
-        color: #ffff00;
+        color: #ffffff;
         margin-right: 7px;
         font-weight: 700;
         font-style: italic;
+        background-color:  #00b562;
+        border-radius: 10px;
+        padding: 0px 10px;
         
     } 
     .text-headline > span:nth-child(3){
@@ -245,7 +249,7 @@
         font-size: 36px;
         letter-spacing: 0.5px;
         line-height: 46.8px;
-        color: white;
+        color: rgb(0, 0, 0);
         font-weight: 300;
     } 
 

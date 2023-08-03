@@ -148,8 +148,8 @@ button{
 #close{
     height: 27px;
     position: absolute;
-    right: 20%;
-    top: 17.5%;
+    right: 22%;
+        top: 25.5%;
     border: 2px solid white;
     border-radius: 50%;
     cursor: pointer;
@@ -169,6 +169,7 @@ button{
     width: 59.3%;
     height: 290px;
     max-width: 100%;
+    /* border: 1px solid #000; */
 }
 
 #login_left_div{
@@ -273,11 +274,13 @@ button{
     margin-top: 5px;
     padding: 0;
     z-index: 0;
+    /* border: 1px solid #000; */
     
 }
 
 #blur{
     height: 100%;
+    /* border: 1px solid #000; */
 }
 
 #svgBlur {
@@ -285,6 +288,8 @@ button{
     filter: url("#sharpBlur");
     width: 100%;
     height: 100%;
+    /* margin-top: 20px; */
+    /* border: 1px solid #000; */
 }
 
 #hideSvg{
@@ -296,6 +301,8 @@ button{
     padding: 0;
     position: absolute;
     width: 1px;
+    /* background-color: #558b2f; */
+    /* border: 10px solid #000; */
 }
 
 #content {
@@ -304,11 +311,13 @@ button{
     height: 100%;
     margin-top: 5px;
     z-index: 1;
+    /* border: 1px solid #000; */
 }
 
 #notBlur{
     width: 100%;
     height: 100%;
+    /* border: 1px solid #000; */
 }
 
 #rate_div{
@@ -585,7 +594,10 @@ p{
     height: 385px;
     box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
     margin-bottom: 24px;
+    margin-top: 50px;
+   
 }
+
 
 #map_div{
     width: 88%;

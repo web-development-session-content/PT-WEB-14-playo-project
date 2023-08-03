@@ -1,6 +1,6 @@
 #con {
   display: grid;
-  grid-template-columns: repeat(2, 47.5%);
+  grid-template-columns: repeat(2, 1fr);
   width: 64%;
   margin: auto;
   grid-gap: 30px 50px;
@@ -18,17 +18,19 @@
 
 
 #places {
-  height: 340px;
+  /* max-height: 340px; */
   border: 1px solid transparent;
   box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
     rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
   border-radius: 5px;
   cursor: pointer;
+  /* overflow: hidden; */
 }
 .conimage {
-  height: 40%;
+max-height: 210px;
   width: 100%;
   border-radius: 5px;
+  /* border: 1px solid #000; */
 }
 .imgtext {
   color: white;
