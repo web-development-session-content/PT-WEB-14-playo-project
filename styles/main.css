@@ -53,8 +53,12 @@ body{
 #verticalbox2>#profile_img{
     margin: auto;
    padding-top: 30px;
- height:100px;
-  width:105px;
+   height:100px;
+    width:105px;
+  /* margin-bottom: 10px; */
+}
+#verticalbox2>#profile_img img{
+ width: 100%;
 }
 #mob{
     padding-left: 33%;
