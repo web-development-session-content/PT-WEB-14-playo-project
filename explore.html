@@ -112,9 +112,13 @@
   //Append Data Function 
   function apprndData(data) {
     console.log(data);
-    // console.log(data)
-    data.map((el) => {
-      let y = `
+    if (data.length == 0) {
+      con.innerHTML = "No matching found for the given city";
+    } else {
+
+
+      data.map((el) => {
+        let y = `
       <div onclick="details(${el.id})" id= "places" class="clickdiv">
         <div>
           <img src="${el.image}" alt="" class="conimage">
@@ -130,15 +134,18 @@
           </div>
       </div>`;
 
-      let place = document.getElementById("place");
-      place.setAttribute("class", "bold");
-      place.innerHTML = el.city;
-      con.innerHTML += y;
+        let place = document.getElementById("place");
+        place.setAttribute("class", "bold");
+        place.innerHTML = el.city;
+        con.innerHTML += y;
 
-    })
+      })
+    }
   }
 
 
+</script>
+<script>
   function details(x) {
     console.log("id:", x);
     let data = {
@@ -148,26 +155,6 @@
     let location = localStorage.setItem("id", JSON.stringify(data));
     window.location.href = "detail.html";
   }
-
-
-
-
-
-
-
-
-
-
-
-
-
-//Filtering array of objects from the data base End (With Debouncing Feature)
-
-
-
-
-
-
 
 
 </script>

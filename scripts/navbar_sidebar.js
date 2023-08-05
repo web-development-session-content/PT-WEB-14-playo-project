@@ -40,8 +40,8 @@ function navbarsidebar() {
 
 
     <div id="verticalbox1" >
-        <img  src="https://cdn-icons-png.flaticon.com/512/3177/3177440.png" >
-        <p id="mob">9021553726</p>
+    <img  src="https://cdn-icons-png.flaticon.com/512/3177/3177440.png" >
+    <p id="mob">9021553726</p>
        <div id="line"></div>
 
        <div id="sidebtn">

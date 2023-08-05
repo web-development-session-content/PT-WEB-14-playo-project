@@ -108,8 +108,12 @@
     //Code End
 
 
+    try {
 
-    checkDone();
+        checkDone();
+    } catch (err) {
+
+    }
 
 
     function checkDone() {
@@ -161,7 +165,7 @@
 
 
         let loginstat = localStorage.getItem("login");
-        if (loginstat === "true") {
+        if (loginstat == "true") {
 
             let data = JSON.parse(localStorage.getItem("user_details"));
             let { f, l, e } = data;
@@ -171,9 +175,7 @@
 
         }
 
-
-
-
+        alert("Details updated!");
 
     })
 
@@ -183,8 +185,11 @@
         document.querySelector(".firstname").placeholder = "First Name*";
         document.querySelector(".lastname").placeholder = "Last Name*";
         document.querySelector(".email").placeholder = "Email*";
-        window.localStorage.removeItem('user_details');
-        localStorage.setItem("givedetails", false);
+        document.querySelector(".firstname").value = "";
+        document.querySelector(".lastname").value = "";
+        document.querySelector(".email").value = "";
+        // window.localStorage.removeItem('user_details');
+        // localStorage.setItem("givedetails", false);
 
     })
 
