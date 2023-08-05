@@ -12,7 +12,7 @@
 
 
     
-    let quoteUrl = "https://bodybuilding-quotes1.p.rapidapi.com/random-quote";
+    let quoteUrl = "://bodybuilding-quotes1.p.rapidapi.com/random-quote";
     fetch(quoteUrl, {
 	"method": "GET",
 	"headers": {
@@ -21,6 +21,7 @@
 	}
     })
     .then((res)=>{
+        console.log(quoteUrl);
         return res.json()
     })
     .then((res)=>{
