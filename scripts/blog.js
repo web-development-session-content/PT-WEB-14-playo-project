@@ -45,7 +45,13 @@ function fetchNews() {
     })
     .then((res) => {
       let appendlocation = document.querySelector("#dynamic-news");
-      appendNews(res.articles, appendlocation);
+
+      if (res.status == "error") {
+        // appendlocation.innerHTML = res.message;
+      } else {
+        appendlocation.innerHTML = "";
+        appendNews(res.articles, appendlocation);
+      }
     })
     .catch((e) => {
       console.log(e);
@@ -88,7 +94,11 @@ document.querySelector("#health-news").addEventListener("click", () => {
       console.log(res);
       let appendlocation = document.querySelector(".dynamic-news");
       appendlocation.innerHTML = "";
-      appendNews(res.articles, appendlocation);
+      if (res.status == "error") {
+        appendlocation.innerHTML = res.message;
+      } else {
+        appendNews(res.articles, appendlocation);
+      }
     })
     .catch((e) => {
       console.log(e);
@@ -128,7 +138,11 @@ document.querySelector("#sports-news").addEventListener("click", () => {
       console.log(res);
       let appendlocation = document.querySelector(".dynamic-news");
       appendlocation.innerHTML = "";
-      appendNews(res.articles, appendlocation);
+      if (res.status == "error") {
+        appendlocation.innerHTML = res.message;
+      } else {
+        appendNews(res.articles, appendlocation);
+      }
     })
     .catch((e) => {
       console.log(e);
@@ -169,7 +183,11 @@ document.querySelector("#cricket-news").addEventListener("click", () => {
       console.log(res);
       let appendlocation = document.querySelector(".dynamic-news");
       appendlocation.innerHTML = "";
-      appendNews(res.articles, appendlocation);
+      if (res.status == "error") {
+        appendlocation.innerHTML = res.message;
+      } else {
+        appendNews(res.articles, appendlocation);
+      }
     })
     .catch((e) => {
       console.log(e);
@@ -210,7 +228,11 @@ document.querySelector("#football-news").addEventListener("click", () => {
       console.log(res);
       let appendlocation = document.querySelector(".dynamic-news");
       appendlocation.innerHTML = "";
-      appendNews(res.articles, appendlocation);
+      if (res.status == "error") {
+        appendlocation.innerHTML = res.message;
+      } else {
+        appendNews(res.articles, appendlocation);
+      }
     })
     .catch((e) => {
       console.log(e);
@@ -251,7 +273,11 @@ document.querySelector("#tennis-news").addEventListener("click", () => {
       console.log(res);
       let appendlocation = document.querySelector(".dynamic-news");
       appendlocation.innerHTML = "";
-      appendNews(res.articles, appendlocation);
+      if (res.status == "error") {
+        appendlocation.innerHTML = res.message;
+      } else {
+        appendNews(res.articles, appendlocation);
+      }
     })
     .catch((e) => {
       console.log(e);
@@ -292,7 +318,11 @@ document.querySelector("#quize-news").addEventListener("click", () => {
       console.log(res);
       let appendlocation = document.querySelector(".dynamic-news");
       appendlocation.innerHTML = "";
-      appendNews(res.articles, appendlocation);
+      if (res.status == "error") {
+        appendlocation.innerHTML = res.message;
+      } else {
+        appendNews(res.articles, appendlocation);
+      }
     })
     .catch((e) => {
       console.log(e);
@@ -323,12 +353,18 @@ document.querySelector("#search").addEventListener("keyup", (event) => {
       })
       .then((res) => {
         console.log(res);
-        if (res.articles.length == 0) {
+        if (res.status == "error") {
+          document.querySelector(".dynamic-news").textContent = res.message;
+        } else if (res.articles.length == 0) {
           document.querySelector(".dynamic-news").textContent =
             "No search result found!";
         } else {
           let appendlocation = document.querySelector(".dynamic-news");
-          appendNews(res.articles, appendlocation);
+          if (res.status == "error") {
+            appendlocation.innerHTML = res.message;
+          } else {
+            appendNews(res.articles, appendlocation);
+          }
         }
       })
       .catch((e) => {

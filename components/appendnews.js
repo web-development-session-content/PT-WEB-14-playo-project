@@ -1,6 +1,6 @@
 function appendNews(data, location) {
   location.innerHTML = "";
-  if (data.length == 0) {
+  if (data == undefined || data.length == 0) {
     location.innerHTML = "<strong>No data recieved!</strong>";
   } else {
     data.map((el) => {
