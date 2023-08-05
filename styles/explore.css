@@ -14,7 +14,6 @@ body {
 }
 
 #places {
-  height: 340px;
   border: 1px solid transparent;
   box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
     rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
@@ -22,7 +21,7 @@ body {
   cursor: pointer;
 }
 .conimage {
-  height: 40%;
+  height: 250px;
   width: 100%;
   border-radius: 5px;
 }
@@ -39,34 +38,31 @@ body {
   font-weight: bold;
   font-size: 15px;
   font-family: "lato", sans-serif;
-  line-height: 0%;
-  margin-left: 4%;
-  margin-top: 25px;
 }
 .location {
   color: grey;
   font-family: "lato", sans-serif;
   font-size: 13px;
-  margin-left: 4%;
 }
 .clockicon {
-  height: 30px;
-  transform: translateY(10px);
-  margin-right: 10px;
+  height: 20px;
+  /* transform: translateY(10px); */
+  margin-right: 13px;
 }
 .coaching {
-  text-align: center;
+  /* text-align: center; */
   text-transform: lowercase;
   color: rgb(179, 178, 178);
   font-family: "lato", sans-serif;
   font-size: 15px;
+  display: flex;
+  align-items: center;
 }
 .timing {
-  margin-top: 20px;
-  margin-left: 3%;
   font-size: 15px;
-  line-height: 0%;
   font-family: "lato", sans-serif;
+  display: flex;
+  align-items: center;
 }
 #filter {
   border: 1px solid rgb(221, 221, 221);
@@ -150,6 +146,29 @@ body {
   padding-right: 20px;
   border: transparent;
   transform: translateY(-10px);
+}
+
+.cardbody > * {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.cardbody {
+  padding: 10px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+  padding-bottom: 10px;
+}
+
+.coaching {
+  margin-top: -15px;
+}
+
+.coaching > img {
+  /* height: 23px; */
+  width: 23px;
+  margin-right: 10px;
 }
 
 @media only screen and (min-width: 376px) and (max-width: 768px) {

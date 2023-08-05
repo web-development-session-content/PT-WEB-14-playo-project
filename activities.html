@@ -538,15 +538,50 @@
 		'Udham Singh Nagar',
 		'Uttarkashi'];
 	city_names.sort((a, b) => a - b);
-	//console.log(city_names)
+	appendCity(city_names);
 
-	for (var i = 0; i < city_names.length; i++) {
-		var showcities = document.querySelector("#citynames");
-		var p = document.createElement("p");
-		var line = document.createElement("hr");
-		p.innerHTML = city_names[i];
-		showcities.append(p, line);
+	const debounceData = debounce(appendCity, 500);
+
+	const searchbar = document.querySelector("#typesearch");
+	searchbar.addEventListener("keyup", (event) => {
+		debounceData(event.target.value);
+	})
+
+	function debounce(func, duration) {
+		let timer;
+		return (query) => {
+			clearTimeout(timer);
+			timer = setTimeout(() => {
+				func(city_names.filter((element) => {
+					return element.toLowerCase().includes(query.toLowerCase());
+				}));
+			}, duration);
+		}
 	}
+
+	function appendCity(city_names) {
+		var showcities = document.querySelector("#citynames");
+		showcities.innerHTML = ""
+		if (city_names.length == 0) {
+			showcities.innerHTML = "No city found"
+		}
+		for (var i = 0; i < city_names.length; i++) {
+			var p = document.createElement("p");
+			var line = document.createElement("hr");
+			p.innerHTML = city_names[i];
+			p.addEventListener("click", function (event) {
+				let value = event.target.innerText;
+				let data = {
+					city: event.target.innerText,
+				};
+
+				let location = localStorage.setItem("name", JSON.stringify(data));
+				window.location.href = "explore.html";
+			})
+			showcities.append(p, line);
+		}
+	}
+
 
 	//  popupstartshere-----------------------
 	// var modal = document.getElementById("myModal");
@@ -638,7 +673,6 @@
 	document.querySelector("#searchbtn").addEventListener("click", () => {
 		let data = {
 			city: document.getElementById("typesearch").value,
-
 		};
 
 		let location = localStorage.setItem("name", JSON.stringify(data));

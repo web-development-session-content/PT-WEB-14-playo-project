@@ -1,5 +1,5 @@
-function profile(){
-    return ` <div id="profile_img"><img src="https://playo-website.gumlet.net/playo_functional/Icons/user_blank.svg" /></div>
+function profile() {
+  return ` <div id="profile_img"><img src="https://cdn-icons-png.flaticon.com/512/3177/3177440.png" style="width: 100px;" /></div>
     
     <div id="inputbox"> <input  class="firstname" type="text" placeholder="First Name*">
      <input  class="lastname" type="text" placeholder="Last Name*" >
@@ -16,8 +16,7 @@ function profile(){
      <button id="reset">RESET</button>
     </div>
     
-    </div>`
-    
-    }
-    
-    export default profile
+    </div>`;
+}
+
+export default profile;

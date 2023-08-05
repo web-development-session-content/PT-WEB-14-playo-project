@@ -7,88 +7,86 @@
     <link rel="stylesheet" href="./styles/footer.css">
     <title>Playo: Pay with razor pay</title>
     <style>
-        body{
-            /* display: flex;
-            justify-content: center;
-            background-color: #EEEFEF; */
+        body {
             margin: 0;
             padding: 0;
-            
         }
 
-        #header{
-            width: 100%; 
-            height: 66px; 
+        #header {
+            width: 100%;
+            height: 66px;
         }
 
         /* Navbar start */
-        #navbar{
+        #navbar {
             height: 66px;
             background-color: #FEFFFE;
             width: 100%;
-            
+
         }
 
-        body{
+        body {
             margin: auto;
         }
 
-        #logo{ 
-            width: 100px; 
-            height: 45px; 
+        #logo {
+            width: 100px;
+            height: 45px;
             margin-left: -60%;
         }
-        
-        #pplogo{
-            width: 35px; 
+
+        #pplogo {
+            width: 35px;
             height: 35px;
         }
-        
-        #explorenavbar{
-            display: flex; 
-            padding-top: 10px; 
+
+        #explorenavbar {
+            display: flex;
+            padding-top: 10px;
             width: 100%;
-            height: 100%; 
+            height: 100%;
             box-shadow: rgba(0, 0, 0, 0.185) 0px 3px 5px;
         }
-        
-        #dropdownarrow{
-            width: 12px; 
+
+        #dropdownarrow {
+            width: 12px;
             height: 8px;
-            padding-top: 20px; 
+            padding-top: 20px;
             margin-left: 1%;
         }
-        
-        #logodiv{
+
+        #logodiv {
             margin-left: 9.5%;
             margin-top: 10px;
         }
-        
-        #nav2div{
-            margin-left: 67.5%; margin-top: 5px;
-            display: flex; margin-top: 10px;
+
+        #nav2div {
+            margin-left: 67.5%;
+            margin-top: 5px;
+            display: flex;
+            margin-top: 10px;
         }
-        
-        .loginp{
-            margin-left: 10px; 
+
+        .loginp {
+            margin-left: 10px;
             line-height: 10px;
-            font-size: 14px; 
-            font-family: Arial, Helvetica, sans-serif; 
+            font-size: 14px;
+            font-family: Arial, Helvetica, sans-serif;
             color: #5c5c5c;
         }
 
-        #nav2div:hover{
+        #nav2div:hover {
             cursor: pointer;
         }
 
         /* popup styling */
 
-        
-        *{
+
+        * {
             box-sizing: border-box;
         }
-        
-        #modal_container{
+
+        #modal_container {
             border: 1px solid green;
             position: fixed;
             display: flex;
@@ -103,18 +101,18 @@
             opacity: 0;
             pointer-events: none;
         }
-        
-        button{
+
+        button {
             border: 0;
             border-radius: 5px;
             color: white;
             font-size: 14px;
             padding: 10px 25px;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
             background-color: green;
         }
-        
-        #close{
+
+        #close {
             height: 27px;
             position: absolute;
             right: 20%;
@@ -123,13 +121,13 @@
             border-radius: 50%;
             cursor: pointer;
         }
-        
-        #modal_container.show{
+
+        #modal_container.show {
             opacity: 1;
             pointer-events: auto;
         }
-        
-        #modal{
+
+        #modal {
             display: flex;
             background-color: white;
             margin-left: -1.5%;
@@ -139,14 +137,14 @@
             height: 290px;
             max-width: 100%;
         }
-        
-        #login_left_div{
+
+        #login_left_div {
             width: 40%;
             background-color: #fdbd51;
-        
+
         }
 
-        #login_right_div{
+        #login_right_div {
             width: 48.5%;
             height: 80%;
             margin-left: 5%;
@@ -154,8 +152,8 @@
             text-align: center;
             font-family: Lato, sans-serif;
         }
-        
-        #input{
+
+        #input {
             color: #5c5c5c;
             padding: 0;
             font-size: 14px;
@@ -172,33 +170,33 @@
             text-align: left;
             width: 100%;
         }
-        
+
         #input::-webkit-outer-spin-button,
         #input::-webkit-inner-spin-button {
             -webkit-appearance: none;
         }
-        
-        #entermobile{
+
+        #entermobile {
             font-size: 16px;
             line-height: 16px;
             color: #808080;
             font-weight: 400;
             margin-bottom: 50px;
         }
-        
-        #user_phone_div{
+
+        #user_phone_div {
             margin-bottom: 12px;
             display: flex;
         }
-        
-        #sendOTP{
+
+        #sendOTP {
             width: 100%;
             height: 20%;
             background-color: rgb(133, 199, 133);
-        
+
         }
-        
-        #countryDrop{
+
+        #countryDrop {
             margin: 0;
             padding: 0;
             cursor: pointer;
@@ -207,11 +205,11 @@
             margin-left: 10px;
             width: 9%;
         }
-     
 
-     /* Navbar End */
 
-        #rzp-button1{
+        /* Navbar End */
+
+        #rzp-button1 {
             width: 200px;
             height: 50px;
             background-color: #679F00;
@@ -219,14 +217,14 @@
             border-radius: 10px;
             color: white;
             font-size: 17px;
-           
+
         }
 
-        #rzp-button1:hover{
+        #rzp-button1:hover {
             cursor: pointer;
         }
 
-        #payDiv{
+        #payDiv {
             width: 100%;
             height: 400px;
             display: flex;
@@ -235,7 +233,7 @@
             text-align: center;
         }
 
-        #footer{
+        #footer {
             width: 100%;
             height: 281px;
         }
@@ -249,30 +247,35 @@
 
             <div id="explorenavbar">
 
-                <div id="logodiv" >
-                    <img id="logo" src="https://playo-website.imgix.net/company/logo1.png?auto=compress,format" alt="playo logo">
+                <div id="logodiv">
+                    <img id="logo" src="https://playo-website.imgix.net/company/logo1.png?auto=compress,format"
+                        alt="playo logo">
                 </div>
-        
-                <div id="nav2div"> 
-                    <img id="pplogo" src="https://playo-website.gumlet.net/playo_functional/Icons/user_blank.svg" alt="">
+
+                <div id="nav2div">
+                    <img id="pplogo" src="https://cdn-icons-png.flaticon.com/512/3177/3177440.png" alt="">
                     <p id="myBtn" class="loginp">Login/Signup</p>
-                    <img id="dropdownarrow" src="https://playo-website.gumlet.net/playo_functional/Icons/arrow_light.svg" alt="arrow">
+                    <img id="dropdownarrow"
+                        src="https://playo-website.gumlet.net/playo_functional/Icons/arrow_light.svg" alt="arrow">
                 </div>
-        
-               
-        
+
+
+
                 <!--    popupwindow -->
                 <div id="modal_container">
-        
+
                     <div id="modal">
-                        <img id="close" src="https://playo-website.gumlet.net/playo_functional/Icons/closeButton.svg" alt="">
-        
+                        <img id="close" src="https://playo-website.gumlet.net/playo_functional/Icons/closeButton.svg"
+                            alt="">
+
                         <div id="login_left_div">
-                            <img width="100%" src="https://playo-website.gumlet.net/icons/login-graphics.png?auto=compress,format" alt="">
+                            <img width="100%"
+                                src="https://playo-website.gumlet.net/icons/login-graphics.png?auto=compress,format"
+                                alt="">
                         </div>
                         <div id="login_right_div">
                             <p id="entermobile">Enter Your Mobile Number</p>
-        
+
                             <div id="user_phone_div">
                                 <div>
                                     <div id="countrySpan">
@@ -280,7 +283,9 @@
                                             <div id="selectCallingCode">
                                                 <span style="font-size: 14px; color: #424242;" id="rem1">IND</span>
                                                 <span style="font-size: 14px; color: #424242;" id="rem2">+91</span>
-                                                <img id="countryDrop" src="https://s3.ap-south-1.amazonaws.com/playo-website/booking/selectCountry.svg" alt="dropdown">
+                                                <img id="countryDrop"
+                                                    src="https://s3.ap-south-1.amazonaws.com/playo-website/booking/selectCountry.svg"
+                                                    alt="dropdown">
                                             </div>
                                         </span>
                                     </div>
@@ -289,15 +294,15 @@
                                     <input id="input" type="number" placeholder="Mobile Number *" value="">
                                     <hr style="margin-top: -1px; margin-left: -65%; width: 220%;">
                                 </span>
-                                
+
                             </div>
-        
+
                             <button id="sendOTP" style="font-size: 1em;">SEND OTP</button>
-                            <button id="giveOTP"  style="font-size: 1em;" >Enter OTP</button>
+                            <button id="giveOTP" style="font-size: 1em;">Enter OTP</button>
                         </div>
                     </div>
                 </div>
-        
+
             </div>
 
         </div>
@@ -318,128 +323,110 @@
 <script></script>
 <script type="module">
 
+    //Login and pop up full functionalities start
+
+    document.querySelector("#logo").addEventListener("click", () => {
+        window.location.href = "index.html";
+    })
 
 
-    
+    // navbar popup functionality
+    document.querySelector("#giveOTP").style.visibility = "hidden";
 
-    
-//Login and pop up full functionalities start
+    const open = document.getElementById("nav2div");
+    const modal_container = document.getElementById("modal_container");
+    const close = document.getElementById("close");
 
-document.querySelector("#logo").addEventListener("click", ()=>{
-    window.location.href = "index.html";
-})
+    open.addEventListener("click", () => {
+        modal_container.classList.add("show")
+    });
 
-
-// navbar popup functionality
-document.querySelector("#giveOTP").style.visibility = "hidden";
-
-const open = document.getElementById("nav2div");
-const modal_container = document.getElementById("modal_container");
-const close = document.getElementById("close");
-
-open.addEventListener("click", ()=>{
-    modal_container.classList.add("show")
-});
-
-close.addEventListener("click", ()=>{
-    modal_container.classList.remove("show")
-});
+    close.addEventListener("click", () => {
+        modal_container.classList.remove("show")
+    });
 
 
+    //If user is logged in 
+    login()
 
-
-//If user is logged in 
-login()
-
-function login(){
-    console.log("test")
-    let loginStatus = localStorage.getItem("login")
-    console.log(typeof(loginStatus))
-    if(loginStatus === "true"){
-        let ph = localStorage.getItem("mobileNumber");
-        console.log(ph)
-        document.querySelector("#myBtn").textContent = ph;
-        open.addEventListener("click", ()=>{
-            modal_container.classList.remove("show")
-            window.location.href = "login_profile.html";
-        })
-    
-    }
-    else{
-        return false;
-    }
-
-}
-
-
-
-//When user add mobile number to it
-document.querySelector("#sendOTP").addEventListener("click", ()=>{
-    let mobNo = document.querySelector("#input").value;
-    if(mobNo.length != 10){
-        alert("Please Give correct Mobile Number");
-    }
-    else{
-        localStorage.setItem("mobileNumber", mobNo);
-        // modal_container.style.visibility = "hidden";
-        // document.querySelector(".loginp")
-        document.querySelector("#entermobile").textContent = `We have sent an OTP to ${mobNo}`;
-        document.querySelector("#rem1").style.visibility = "hidden";
-        document.querySelector("#rem2").style.visibility = "hidden";
-        document.querySelector("#countryDrop").style.visibility = "hidden";
-        document.querySelector("#input").value = null;
-        document.querySelector("#input").placeholder = "Enter OTP"
-        document.querySelector("input").style.textAlign = "center";
-        document.querySelector("#sendOTP").style.visibility = "hidden";
-        document.querySelector("#giveOTP").style.visibility = "visible";
-
-        document.querySelector("#giveOTP").addEventListener("click", ()=>{
-
-            let otp = document.querySelector("input").value;
-            if(otp == "123456"){
-                // alert("success");
+    function login() {
+        console.log("test")
+        let loginStatus = localStorage.getItem("login")
+        console.log(typeof (loginStatus))
+        if (loginStatus === "true") {
+            let ph = localStorage.getItem("mobileNumber");
+            console.log(ph)
+            document.querySelector("#myBtn").textContent = ph;
+            open.addEventListener("click", () => {
                 modal_container.classList.remove("show")
-                document.querySelector("#myBtn").textContent = mobNo;
-                localStorage.setItem("login", true);
+                window.location.href = "login_profile.html";
+            })
 
+        }
+        else {
+            return false;
+        }
 
-                open.addEventListener("click", ()=>{
-                    modal_container.classList.remove("show")
-                    window.location.href = "login_profile.html";
-                    login()
-
-                })
-
-
-            }
-            else{
-                alert("Wrong OTP");
-                document.querySelector("#entermobile").textContent = `Enter Your mobile number`;
-                document.querySelector("#rem1").style.visibility = "visible";
-                document.querySelector("#rem2").style.visibility = "visible";
-                document.querySelector("#countryDrop").style.visibility = "visible";
-                document.querySelector("#input").value = null;
-                document.querySelector("#input").placeholder = "Enter Mobile Number"
-                document.querySelector("#sendOTP").style.visibility = "visible";
-                document.querySelector("#giveOTP").style.visibility = "hidden";
-
-            }
-
-        })
-       
     }
-})
-
-//Login and pop up full functionalities end
 
 
 
+    //When user add mobile number to it
+    document.querySelector("#sendOTP").addEventListener("click", () => {
+        let mobNo = document.querySelector("#input").value;
+        if (mobNo.length != 10) {
+            alert("Please Give correct Mobile Number");
+        }
+        else {
+            localStorage.setItem("mobileNumber", mobNo);
+            // modal_container.style.visibility = "hidden";
+            // document.querySelector(".loginp")
+            document.querySelector("#entermobile").textContent = `We have sent an OTP to ${mobNo}`;
+            document.querySelector("#rem1").style.visibility = "hidden";
+            document.querySelector("#rem2").style.visibility = "hidden";
+            document.querySelector("#countryDrop").style.visibility = "hidden";
+            document.querySelector("#input").value = null;
+            document.querySelector("#input").placeholder = "Enter OTP"
+            document.querySelector("input").style.textAlign = "center";
+            document.querySelector("#sendOTP").style.visibility = "hidden";
+            document.querySelector("#giveOTP").style.visibility = "visible";
+
+            document.querySelector("#giveOTP").addEventListener("click", () => {
+
+                let otp = document.querySelector("input").value;
+                if (otp == "123456") {
+                    // alert("success");
+                    modal_container.classList.remove("show")
+                    document.querySelector("#myBtn").textContent = mobNo;
+                    localStorage.setItem("login", true);
 
 
+                    open.addEventListener("click", () => {
+                        modal_container.classList.remove("show")
+                        window.location.href = "login_profile.html";
+                        login()
+
+                    })
 
 
+                }
+                else {
+                    alert("Wrong OTP");
+                    document.querySelector("#entermobile").textContent = `Enter Your mobile number`;
+                    document.querySelector("#rem1").style.visibility = "visible";
+                    document.querySelector("#rem2").style.visibility = "visible";
+                    document.querySelector("#countryDrop").style.visibility = "visible";
+                    document.querySelector("#input").value = null;
+                    document.querySelector("#input").placeholder = "Enter Mobile Number"
+                    document.querySelector("#sendOTP").style.visibility = "visible";
+                    document.querySelector("#giveOTP").style.visibility = "hidden";
 
+                }
 
+            })
+
+        }
+    })
 
 
     // importing footer part
@@ -447,31 +434,25 @@ document.querySelector("#sendOTP").addEventListener("click", ()=>{
     let footer_div = document.getElementById("footer");
     footer_div.innerHTML = footer();
 
-  
-
-
-
     let price = localStorage.getItem("finalPrice") * 100
 
-
     var options = {
-        "key": "rzp_test_VhRZKygRJUvXe9", // Enter the Key ID generated from the Dashboard
+        "key": "rzp_test_mUH9vbJyJiCr9m", // Enter the Key ID generated from the Dashboard
         "amount": price, // Amount is in currency subunits. Default currency is INR. Hence, 50000 refers to 50000 paise
         "currency": "INR",
         "name": "Playo",
         "description": "Test Payment",
-        "image": "https://blog.playo.co/wp-content/uploads/2018/04/Playo-dp-gradient4-1.png",
+        "image": "https://playo-website.gumlet.io/playo-website-v2/Logo+with+Trademark_Filled.png",
         // "order_id": "order_Ef80WJDPBmAeNt", //Pass the `id` obtained in the previous step
         // "account_id": "acc_Ef7ArAsdU5t0XL",
-        "handler": function (response){
-            alert(response.razorpay_payment_id);
-            alert(response.razorpay_order_id);
-            alert(response.razorpay_signature)
+        "handler": function (response) {
+            console.log(response);
+            alert(`Payment Successful for payment id : ${response.razorpay_payment_id}`);
         }
     };
     var rzp1 = new Razorpay(options);
-    document.getElementById('rzp-button1').onclick = function(e){
-        rzp1.open();
+    document.getElementById('rzp-button1').onclick = function (e) {
         e.preventDefault();
+        rzp1.open();
     }
 </script>

@@ -32,20 +32,20 @@
     <div id="filter">
       <div id="locationfilter">
         <img src="https://playov2.gumlet.net//explore/Group+3539%402x.png" alt="" class="icon" />
-        <div class="align">
+        <div class="align loaction">
           <P class="filtertext">Location</P>
-
           <span id="place"></span>
         </div>
         <div id="searchicon">
-          <img src="https://playov2.gumlet.net//explore/location_search@2x.png" alt="" class="icon2" />
-          <P style="transform: translateY(15px);" id="detect">Detect</P>
+          <img src="https://playo-website.gumlet.io/playo-website-v2/logos-icons/detect-location-icon.svg" alt=""
+            class="icon2" />
+          <P id="detect">Detect</P>
         </div>
       </div>
       <div id="searchfilter">
         <img src="https://playov2.gumlet.net//explore/search-24px@2x.png" alt="" class="icon">
-        <div class="align">
-          <p class="filtertext">Search</p>
+        <div class="align searchmix">
+          <p class="filtertext textSearch">Search</p>
           <p class="shade filtertext"> For example,"Football"</p>
 
         </div>
@@ -70,7 +70,9 @@
         </div>
       </div>
     </div>
-    <div id="con"></div>
+    <div id="con">
+
+    </div>
     <div id="footer"></div>
   </div>
 </body>
@@ -83,7 +85,6 @@
   footerr.innerHTML = footer();
 
   let my_value = JSON.parse(localStorage.getItem("name"));
-  console.log(my_value.city)
 
   searchLocation();
   //Search Function Code 
@@ -101,8 +102,6 @@
       let regex = new RegExp(`^${search_value}`, "gi");
       return el.city.match(regex);
     })
-
-    console.log(filterData);
     apprndData(filterData)
   }
 
@@ -112,25 +111,29 @@
 
   //Append Data Function 
   function apprndData(data) {
+    console.log(data);
     // console.log(data)
     data.map((el) => {
-      let y = `  <div onclick="details(${el.id})" id= "places" class="clickdiv">
+      let y = `
+      <div onclick="details(${el.id})" id= "places" class="clickdiv">
         <div>
           <img src="${el.image}" alt="" class="conimage">
           <p class="imgtext">Coaching</p>
         </div>
-        <p class="highlighttext">${el.name}</p>
-        <p class="location">${el.location}</p>
-        <p class="timing"><img src="./images/clock.png" alt="" class="clockicon">${el.timing}</p>
-        <p class="coaching">${el.name}  Coaching</p>
+        <div class="cardbody">
+          <p class="highlighttext">${el.name}</p>
+          <p class="location">${el.location}</p>
+          <p class="timing"><img src="https://icons.iconarchive.com/icons/flat-icons.com/flat/256/Clock-icon.png" alt="" class="clockicon" >${el.timing}</p>
+          <div class="coaching">
+            <img src='https://cdn-icons-png.flaticon.com/512/4163/4163761.png'/>
+            <p>${el.name}  Coaching</p></div>
+          </div>
       </div>`;
 
       let place = document.getElementById("place");
       place.setAttribute("class", "bold");
       place.innerHTML = el.city;
       con.innerHTML += y;
-
-
 
     })
   }
