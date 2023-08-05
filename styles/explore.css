@@ -104,14 +104,15 @@ body {
 }
 .icon2 {
   height: 15px;
-  transform: translateY(30px);
+  /* transform: translateY(30px); */
   margin-right: 8px;
+  /* transform: translateY(-1px); */
 }
 #searchicon {
   display: flex;
   border: 1px solid transparent;
   margin-left: 20px;
-
+  align-items: center;
   color: grey;
 }
 .filtertext {

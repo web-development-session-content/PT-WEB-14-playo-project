@@ -110,7 +110,9 @@ async function searchLocation(d) {
     return false;
   }
 
-  let response = await fetch("../database/bookvenue.json");
+  let response = await fetch(
+    "https://api.npoint.io/29f9168a0c1c4c9c39e5/bookVenue"
+  );
   let data = await response.json();
   console.log(data);
   //Writing Function for filter data based on search results
