@@ -5,9 +5,9 @@ function navbar() {
                 </a>
 
                 <div id="nav_options">
-                    <a href="venues.html"><span class="link-btn">BOOK VENUES</span></a>
-                    <a href="activities.html"><span class="link-btn">ACTIVITIES</span></a>
-                    <a href="blog.html"><span class="link-btn">BLOG</span></a>
+                    <a href="venues.html"><span class="link-btn">Book Venues</span></a>
+                    <a href="activities.html"><span class="link-btn">Activities</span></a>
+                    <a href="blog.html"><span class="link-btn">Blog</span></a>
                 </div>
             </div>`;
 }

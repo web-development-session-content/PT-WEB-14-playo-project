@@ -117,3 +117,8 @@ a {
   align-items: center;
   height: 100%;
 }
+
+#nav_options > a {
+  /* font-family: bold; */
+  font-size: 17px;
+}
