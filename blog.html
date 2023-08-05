@@ -10,12 +10,16 @@
     <!-- Google font for open sans -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
 
     <!-- Roboto -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
 
     <!-- Font Aswam -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
@@ -34,7 +38,7 @@
 
             <div>
                 <div>TRENDING</div>
-                <div id="quote">It is a happy talent to know how to play.</div>
+                <div id="quote"></div>
             </div>
 
             <div>
@@ -52,7 +56,7 @@
                 <img src="./playo_logo.png" alt="">
             </a>
             <a href="blog.html">
-                <img src="./plyo_banner.png" alt="" >
+                <img src="./plyo_banner.png" alt="">
             </a>
 
 
@@ -65,11 +69,11 @@
 
                 <div id="sports-news">SPORTS</div>
                 <div id="health-news">HEALTH</div>
-                <div>CRICKET</div>
-                <div>FOOTBALL</div>
-                <div>TENNIS</div>
-                <div>QUIZ</div>
-                
+                <div id="cricket-news">CRICKET</div>
+                <div id="football-news">FOOTBALL</div>
+                <div id="tennis-news">TENNIS</div>
+                <div id="quize-news">QUIZ</div>
+
 
             </div>
         </div>
@@ -86,43 +90,47 @@
 
                     <!-- Static News -->
 
-                    <div class="static-news">
+                    <!-- <div class="static-news">
 
                         <div id="first-blog">
-                            <img src="https://blog.playo.co/wp-content/uploads/2021/10/playo-wants-you-351x185.jpg" alt="">
+                            <img src="https://blog.playo.co/wp-content/uploads/2021/10/playo-wants-you-351x185.jpg"
+                                alt="">
                             <div>
                                 <div>NOVEMBER 16,2021</div>
-                                <div>#HumansOfPlayo | We eant to listen to your stories, rooted from being a PLAYOHOLIC!</div>
+                                <div>India batter Manoj Tiwary announces retirement from all forms of cricket -
+                                    Hindustan Times
+                                </div>
                             </div>
-                            <div>Playo is reaching out to all you playoholic out there to share your unique PLAYO stories</div>
+                            <div>Playo is reaching out to all you playoholic out there to share your unique PLAYO
+                                stories</div>
                         </div>
 
 
                         <div id="sec-blog">
-                            <img src="https://blog.playo.co/wp-content/uploads/2020/05/PlaySafeGuidelines-351x185.png" alt="">
+                            <img src="https://blog.playo.co/wp-content/uploads/2020/05/PlaySafeGuidelines-351x185.png"
+                                alt="">
                             <div>
                                 <div>MAY 18, 2020</div>
                                 <div>Covid Guidelines to #PlaySafe in these times</div>
                             </div>
                             <div>COVID SAFETY GUIDELINES Playing during Omicron Scare?... </div>
                         </div>
-                    </div>
+                    </div> -->
 
                     <!-- Dynamic News -->
-                    <div class="dynamic-news">
-
-                        <!--                         
-
-                        <div>
-                            <div><img src="https://ichef.bbci.co.uk/news/1024/branded_news/3B01/production/_122750151_404745d1-0dcf-4af2-8b3d-c69a254883bf.jpg" alt=""></div>
-                            
-                            <div>THIS IS FOR DATE</div>
-                            <div>Virat Kohli | Captaincy lessons we learnt from the former </div>
-                            <div>Looking for a golf guide? Whether you are going to one of the four major golf</div>
-                        </div> -->
-
-
-
+                    <div id="dynamic-news" class="dynamic-news">
+                        <div onclick="()=>{
+                            window.location.assign(`https:\/\/www.espncricinfo.com\/series\/the-hundred-women-s-competition-2023-1355568\/southern-brave-women-vs-welsh-fire-women-5th-match-1355576\/match-report`);
+                        }">
+                            <div><img
+                                    src="https://img1.hscicdn.com/image/upload/f_auto/lsci/db/PICTURES/CMS/365200/365296.6.jpg">
+                            </div>
+                            <div>2023-08-04T18:09:03Z</div>
+                            <div>Hayley Matthews stars with bat and ball as Welsh Fire end Southern Brave's home run -
+                                ESPNcricinfo</div>
+                            <div>Smriti Mandhana, Danni Wyatt fifties in vain as Fire win high-scorer off last ball
+                            </div>
+                        </div>
 
                     </div>
 
@@ -146,28 +154,32 @@
 
                         <div>
 
-                            <img src="https://blog.playo.co/wp-content/uploads/2019/09/Will-Djokovic-be-crown-as-Winner-in-the-next-US-Open-343x215.png" alt="">
+                            <img src="https://blog.playo.co/wp-content/uploads/2019/09/Will-Djokovic-be-crown-as-Winner-in-the-next-US-Open-343x215.png"
+                                alt="">
                             <div>SEPTEMBER 4, 2019</div>
                             <div>Will Djokovic Be Crown As Winner In The Next US Open</div>
 
                         </div>
 
                         <div>
-                            <img src="https://blog.playo.co/wp-content/uploads/2017/08/cricket-football-343x215.jpg" alt="">
+                            <img src="https://blog.playo.co/wp-content/uploads/2017/08/cricket-football-343x215.jpg"
+                                alt="">
                             <div>August 23, 2017</div>
                             <div>Football Vs Cricket: Which 11 A-Side Game Is More Interesting?</div>
                         </div>
 
 
                         <div>
-                            <img src="https://blog.playo.co/wp-content/uploads/2017/05/li-ning-rackets-HD-343x215.jpg" alt="">
+                            <img src="https://blog.playo.co/wp-content/uploads/2017/05/li-ning-rackets-HD-343x215.jpg"
+                                alt="">
                             <div>December 15, 2017</div>
                             <div>Have You Heard About “Sports Resolutions”. Are You Doing It?</div>
                         </div>
 
 
                         <div>
-                            <img src="https://blog.playo.co/wp-content/uploads/2018/10/badminton-how-to-play-coverimage-343x215.jpg" alt="">
+                            <img src="https://blog.playo.co/wp-content/uploads/2018/10/badminton-how-to-play-coverimage-343x215.jpg"
+                                alt="">
                             <div>October 15, 2018</div>
                             <div>Everything You Need To Know About Badminton Doubles And How To Play</div>
                         </div>
@@ -180,13 +192,15 @@
                         </div>
 
                         <div>
-                            <img src="https://blog.playo.co/wp-content/uploads/2017/12/football-shoes-amazon-343x215.jpg" alt="">
+                            <img src="https://blog.playo.co/wp-content/uploads/2017/12/football-shoes-amazon-343x215.jpg"
+                                alt="">
                             <div>April 15, 2021</div>
                             <div>Badminton Court Near Me | Bangalore Edition | Playo</div>
                         </div>
 
                         <div>
-                            <img src="https://blog.playo.co/wp-content/uploads/2017/11/basic-football-shots-gareth-bale-343x215.jpg" alt="">
+                            <img src="https://blog.playo.co/wp-content/uploads/2017/11/basic-football-shots-gareth-bale-343x215.jpg"
+                                alt="">
                             <div>November 25, 2017</div>
                             <div>Decoded: How To Pick The Right Football Boots For the Right Surface?</div>
                         </div>
@@ -209,11 +223,11 @@
 
 
         <!-- Footer start -->
-            <div class="footer">
-                <div>
-                    © 2019 TechMash Solutions. All Rights Reserved.
-                </div>
+        <div class="footer">
+            <div>
+                © 2019 TechMash Solutions. All Rights Reserved.
             </div>
+        </div>
         <!-- Footer End-->
 
     </div>
