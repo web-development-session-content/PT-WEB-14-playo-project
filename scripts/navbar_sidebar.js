@@ -3,7 +3,7 @@ function navbarsidebar(){
     return ` <div id="navbox">
 
     <div id="navbox_img">
-    <a href="index.html">   <img src="https://playo-website.gumlet.net/logo/playo-logo-header-website.png?auto=compress,format&h=100" height="100%" width="100%"/></a>
+    <a href="index.html">   <img src="https://playo-website.gumlet.io/playo-website-v2/Logo+with+Trademark_Filled.png" height="100%" width="100%"/></a>
     </div>
     
     <div id="navdiv">
@@ -14,9 +14,9 @@ function navbarsidebar(){
         <li>
         <div id="#mainmenu">
         <div id="mainm">
-        <div id="top1"><img  src="https://playo-website.gumlet.net/playo_functional/Icons/user_blank.svg" height="37"/></div>
+        <div id="top1"><img  src="https://media.glassdoor.com/sql/1599496/playo-squarelogo-1557208725423.png" height="37"/></div>
         <div><p id="mobnum">9021553726</p></div>
-        <div id="down"><img src="https://playo-website.gumlet.net/playo_functional/Icons/arrow_light.svg" height="10" /></div>
+        <div id="down"><img src="https://playo-website.gumlet.io/playo-website-v2/logos-icons/login-user.svg" height="10" /></div>
        </div>
         <div id="menu">
         <ul type="none">
@@ -41,21 +41,21 @@ function navbarsidebar(){
 
 
     <div id="verticalbox1" >
-        <img  src="https://playo-website.gumlet.net/playo_functional/Icons/user_blank.svg" >
+        <img  src="https://playo-website.gumlet.io/playo-website-v2/logos-icons/login-user.svg" >
         <p id="mob">9021553726</p>
        <div id="line"></div>
 
        <div id="sidebtn">
      <a href="login_profile.html" >  <div id="profile" class="feedback1">
-           <img src="https://playo-website.gumlet.net/icons/edit-profile.svg" />
+           <img src="https://playo-website.gumlet.io/playo-website-v2/logos-icons/login-user.svg" />
            <p style="color:red">Profile</p>
        </div></a>
        <a href="login_mybooking.html" > <div id="profile" id="gg1" >
-        <img src="https://playo-website.gumlet.net/icons/bullet-list.svg" />
+        <img src="https://playo.gumlet.io/SHRIKEMPEGOWDAINDOORSTADIUM20200908082014863294/ShriKempegowdaIndoorStadium1600235486125.jpeg?w=700&format=webp&q=30&overlay=https://playo-website.gumlet.io/playo-website-v2/logos-icons/playo-logo.png&overlay_width_pct=0.2&overlay_height_pct=1&overlay_position=bottomright" />
         <p>My Booking</p>
     </div></a>
     <a id="idr" href="login_feedback.html" > <div id="profile">
-        <img src="https://playo-website.gumlet.net/icons/back-arrow.svg" />
+        <img src="https://media.glassdoor.com/sql/1599496/playo-squarelogo-1557208725423.png" />
         <p>Feedback</p>
     </div></a>
 </div>
