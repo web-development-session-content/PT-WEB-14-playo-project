@@ -121,7 +121,7 @@ async function searchLocation(value) {
     return false;
   }
 
-  let response = await fetch(`${baseURL}/venues`);
+  let response = await fetch(`./database/bookvenue.json`);
   let data = await response.json();
   console.log(data);
   console.log(value);
