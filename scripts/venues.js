@@ -123,28 +123,29 @@ document.querySelector("#sendOTP").addEventListener("click", ()=>{
 
 
     // //Adding Event Listener
-    // inputTag.addEventListener("input", ()=>{
-    //     //Getting the value of input 
-    //     let value = inputTag.value;
+    inputTag.addEventListener("input", ()=>{
+        //Getting the value of input 
+        let value = inputTag.value;
+        console.log("clicked")
 
-    //     //Dont Implement anything if length is less than equal to 2
-    //     if(value.length <= 2){
-    //         return false;
-    //     }
+        //Dont Implement anything if length is less than equal to 2
+        if(value.length <= 2){
+            return false;
+        }
 
-    //     //Run Search Function
-    //     searchLocation();
+        //Run Search Function
+        searchLocation(value);
 
-    // })
+    })
 
 
     //Search Function Code 
-    async function searchLocation(){
+    async function searchLocation(inputTag){
         //Getting the value again
         var search_value = inputTag.value;
 
 
-        if(search_value.length <= 2 || search_value == ""){
+        if(search_value.length <= 2 || search_value ==""){
             return false;
         }
 
@@ -152,16 +153,17 @@ document.querySelector("#sendOTP").addEventListener("click", ()=>{
         let response = await fetch("../database/bookvenue.json");
         let data = await response.json();
         //console.log(data);
+        
 
         //Writing Function for filter data based on search results
 
-        let filterData = data.filter((el)=>{
+        let filterData = data.filter(function(el){
             let regex = new RegExp(`^${search_value}`, "gi" );
             return el.location.match(regex) || el.name.match(regex);
         })
 
         console.log(filterData);
-       apprndData(filterData)
+       appendData(filterData);
     }
 
 
@@ -189,9 +191,9 @@ document.querySelector("#sendOTP").addEventListener("click", ()=>{
 
   //Creating fetch Function
   async function fetchFunction(){
-      
-    
-    searchLocation();
+   
+    let input=document.getElementById("search");
+    searchLocation(input);
 
   }
 
@@ -199,7 +201,7 @@ document.querySelector("#sendOTP").addEventListener("click", ()=>{
 
 
    //Append Data Function 
-   function apprndData(data){
+   function appendData(data){
 
     
     
@@ -243,6 +245,7 @@ document.querySelector("#sendOTP").addEventListener("click", ()=>{
             let arr = [];
             arr.push(el);
             localStorage.setItem("venueDetails", JSON.stringify(arr));
+            console.log(arr);
         })
 
 

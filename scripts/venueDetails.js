@@ -181,7 +181,7 @@ function displayUi(data){
         locationDiv.textContent = location;
         playDiv.textContent = filter_by[0];
         BookableDiv.textContent = "BOOKABLE";
-        safeImg.src = iconLink;
+        safeImg.src = "https://cdn-icons-png.flaticon.com/512/3035/3035346.png";
         safeDiv.textContent = "Safe & Hygiene";
         ratingDiv.textContent = rating;
         votesDiv.textContent = `${votesCount} votes`

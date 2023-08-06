@@ -37,7 +37,8 @@
   display: flex;
   flex-direction: column;
   margin-top: 50px;
-  position: fixed;
+  margin-left: 100px;
+  position: absolute;
   transform: translateX(770px);
   width: 22%;
   height: 200px;
