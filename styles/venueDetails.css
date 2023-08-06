@@ -269,42 +269,44 @@
     }
 
     .filterbox > div:nth-child(3){
-      display: grid;
-      grid-template-columns: repeat(6, 75px);
-      column-gap: 15px;
-      row-gap: 15px;
-      padding-left: 25px;
-      padding-top: 10px;
-    }
-
-    .filterbox > div:nth-child(3)>div{
-        height: 75px;
-     
-        border: 2px solid transparent;
-        
-        
+        display: grid;
+        grid-template-columns: repeat(6, 75px);
+        column-gap: 15px;
+        row-gap: 15px;
+        padding-left: 25px;
+        padding-top: 10px;
+      }
+  
+      .filterbox > div:nth-child(3)>div{
+          height: 75px;
        
-    }
+          border: 2px solid transparent;
+          
+          
+         
+      }
+  
+      .filterbox > div:nth-child(3)>div>img{
+          height: 40px;
+          width: 40px;
+          border: 1px solid transparent;
+          margin-left: 15px;
+          margin-top: 10px;
+  
+      }
+  
+      .filterbox > div:nth-child(3)>div>p{
+          font-family: "Lato", "Open Sans", sans-serif;
+          font-size: 11px;
+          letter-spacing: 0.5px;
+          color: #545252;
+        
+          border: 1px solid transparent;
+          margin-top: 0px;
+          text-align: center;
+      }
 
-    .filterbox > div:nth-child(3)>div>img{
-        height: 40px;
-        width: 40px;
-        border: 1px solid transparent;
-        margin-left: 15px;
-        margin-top: 10px;
-
-    }
-
-    .filterbox > div:nth-child(3)>div>p{
-        font-family: "Lato", "Open Sans", sans-serif;
-        font-size: 11px;
-        letter-spacing: 0.5px;
-        color: #545252;
       
-        border: 1px solid transparent;
-        margin-top: 0px;
-        text-align: center;
-    }
 
     #buttondiv{
         border: 1px solid transparent;
@@ -384,8 +386,9 @@
     }
 
     .banner > div:nth-child(2)>img{
-        height: 100%;
-        width: 100%;
+        
+        width: 30px;
+        margin-right: 20px;
     }
 
     
@@ -539,7 +542,7 @@
      #container > div > div:nth-child(5)>div:nth-child(2){
          display: flex;
          flex-direction: row;
-         padding-right: 20px;
+         /* padding-right: 20px; */
 
      }
 

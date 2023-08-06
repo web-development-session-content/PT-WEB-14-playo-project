@@ -94,11 +94,19 @@ a {
 }
 
 .app_download_image {
-  width: 170px;
+  max-width: 190px;
   margin: 0px;
+  max-height: 70px;
   padding: 0;
 }
-
+.app_download_image1 {
+  max-width: 170px;
+  margin: 0px;
+  margin-top: 10px;
+  max-height: 50px;
+  padding: 0;
+  border-radius: 10px;
+}
 #footer {
   width: 100%;
   height: 281px;

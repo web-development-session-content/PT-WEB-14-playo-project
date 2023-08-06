@@ -6,9 +6,9 @@ body{
 }
 
 
+.mapouter{position:relative;text-align:right;height:200px;width:200px;}
 
-
-
+.gmap_canvas {overflow:hidden;background:none!important;height:220px;width:260px;}
   /* these style for need help wala div */
   #needhelp{
     position: fixed;
@@ -437,14 +437,15 @@ button{
 .greendivbottom{
     width: 126px;
     height: 5px;
-    background-color: #558b2f;
+    background-color: #729c53;
     position: absolute;
-    bottom: -12.5%;
+    bottom: -6.5%;
     border-bottom-left-radius: 10px;
 }
 
 #secondDiv{
     display: flex;
+    /* margin-left: 100px; */
     letter-spacing: 1px;
 }
 

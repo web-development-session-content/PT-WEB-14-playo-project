@@ -1,5 +1,8 @@
 
+import footer from "../components/footer.js"
 
+let foot = document.querySelector("#footer");
+foot.innerHTML = footer();
 //Login and pop up full functionalities start
 
 document.querySelector("#logo").addEventListener("click", ()=>{
@@ -150,12 +153,12 @@ function displayUi(data){
     document.querySelector("#container").innerHTML = "";
     document.querySelector("#selected-location").textContent = data[0].location
     data.map((el)=>{
-       // console.log(el)
+    //    console.log(el)
 
         //Destructuring ob objects
         let { name, imgUrl,location ,rating , filter_by} = el;
        
-        let iconLink = "https://playo-website.gumlet.net/icons/sh.jpeg?auto=compress,format&q=90";
+        let iconLink = "https://www.shutterstock.com/image-vector/hygienic-green-vector-seal-isolated-260nw-1341338387.jpg";
 
 
         //Function for votes
@@ -218,8 +221,10 @@ function displayUi(data){
 
     //Code for reset button
     resetBtn.addEventListener("click", ()=>{
-        displayUi(data);
         document.querySelector(".filterbox").style.visibility = "hidden";
+        div.style.borderColor="white";
+        displayUi(data);
+        location.reload();
     })
 
 
@@ -304,9 +309,31 @@ function displayUi(data){
         
     })
 
+// cycling
+document.querySelector("#running").addEventListener("click", ()=>{
+    let selectdiv = document.querySelector("#running");
+    let selectText = document.querySelector("#text6");
+    selectdiv.style.border = "2px solid #FE8D3F";
+    selectText.style.color = "#FE8D3F";
+    applyBtn.addEventListener("click", ()=>{
+        filter_value = "Running";
+        filterFunction(filter_value, selectdiv, selectText);
+    })
+    
+})
+ 
 
-
-
+document.querySelector("#cycling").addEventListener("click", ()=>{
+    let selectdiv = document.querySelector("#cycling");
+    let selectText = document.querySelector("#text6");
+    selectdiv.style.border = "2px solid #FE8D3F";
+    selectText.style.color = "#FE8D3F";
+    applyBtn.addEventListener("click", ()=>{
+        filter_value = "Cycling";
+        filterFunction(filter_value, selectdiv, selectText);
+    })
+    
+})
 
 
 

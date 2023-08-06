@@ -539,13 +539,13 @@ var  city_names=['Adilabad',
 			'Udham Singh Nagar',
 			'Uttarkashi'];
       city_names.sort((a,b)=>a-b);
-      //console.log(city_names)
 
      for(var i=0; i<city_names.length; i++){
         var showcities=document.querySelector("#citynames");
      var p=document.createElement("p");
      var line=document.createElement("hr");
          p.innerHTML=city_names[i];
+
          showcities.append(p,line);
      }
 
