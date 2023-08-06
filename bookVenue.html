@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Book Venue</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="styles/footer.css">
     <link rel="stylesheet" href="styles/bookVenue.css">
     <script src="https://checkout.razorpay.com/v1/checkout.js"></script>
@@ -17,11 +18,37 @@
         <div id="explorenavbar">
 
             <div id="logodiv" >
-                <img id="logo" src="https://playo-website.imgix.net/company/logo1.png?auto=compress,format" alt="playo logo">
+                <img id="logo" src="./images/playo.png" alt="playo logo">
             </div>
     
             <div id="nav2div"> 
-                <img id="pplogo" src="https://playo-website.gumlet.net/playo_functional/Icons/user_blank.svg" alt="">
+                <svg
+                id="pplogo"
+                class="hidden md:block"
+                width="32"
+                height="32"
+                viewBox="0 0 32 32"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <circle cx="16" cy="16" r="16" fill="#BCD0DC"></circle>
+                <path
+                  d="M16.0089 8C17.5908 8.00176 19.1366 8.47244 20.451 9.35256C21.7654 10.2327 22.7894 11.4827 23.3936 12.9447C23.9977 14.4066 24.1549 16.0149 23.8452 17.5662C23.5355 19.1174 22.7729 20.5421 21.6537 21.66C20.5345 22.7779 19.1091 23.539 17.5575 23.8469C16.0059 24.1549 14.3978 23.9959 12.9365 23.3902C11.4752 22.7844 10.2263 21.759 9.34763 20.4436C8.46897 19.1282 8 17.5819 8 16C8.00058 14.9488 8.2082 13.9081 8.611 12.9372C9.0138 11.9663 9.60389 11.0842 10.3476 10.3413C11.0913 9.59844 11.974 9.00933 12.9454 8.6076C13.9167 8.20588 14.9577 7.99942 16.0089 8Z"
+                  fill="white"
+                ></path>
+                <path
+                  d="M10.305 17.1999C10.0087 15.9312 10.1463 14.5997 10.6959 13.4184C11.2455 12.2371 12.1753 11.2741 13.3367 10.6836C13.5709 11.9501 13.4048 13.2581 12.8615 14.4259C12.3182 15.5937 11.4247 16.5633 10.305 17.1999V17.1999Z"
+                  fill="#BCD0DC"
+                ></path>
+                <path
+                  d="M18.4365 10.5803C17.724 10.2513 16.9524 10.0695 16.168 10.0457C15.3836 10.0218 14.6024 10.1565 13.8712 10.4416C14.1631 11.866 13.9897 13.3466 13.3764 14.6651C12.7631 15.9835 11.7424 17.07 10.4648 17.7644C10.8145 18.7957 11.4469 19.7081 12.2899 20.3976C12.5489 20.7561 12.6918 21.1853 12.6995 21.6276C12.6455 22.166 12.5338 22.6971 12.3665 23.2117C12.8547 23 13.3298 22.759 13.7891 22.4901C14.1995 22.2471 14.5791 21.9554 14.9197 21.6215C16.0156 21.8262 17.1471 21.7129 18.1807 21.2951C17.88 19.8724 18.0478 18.3905 18.6591 17.0711C19.2607 15.7678 20.2589 14.6881 21.511 13.9861C21.2548 13.2404 20.8503 12.5542 20.322 11.9689C19.7936 11.3836 19.1523 10.9112 18.4365 10.5803Z"
+                  fill="#BCD0DC"
+                ></path>
+                <path
+                  d="M21.6773 14.5586C21.9722 15.8163 21.8413 17.1363 21.3052 18.3115C20.769 19.4868 19.858 20.451 18.715 21.0527C18.4803 19.797 18.6389 18.4994 19.1691 17.3372C19.6992 16.1749 20.5752 15.2046 21.6773 14.5586Z"
+                  fill="#BCD0DC"
+                ></path>
+              </svg>
                 <p id="myBtn" class="loginp">Login/Signup</p>
                 <img id="dropdownarrow" src="https://playo-website.gumlet.net/playo_functional/Icons/arrow_light.svg" alt="arrow">
             </div>
@@ -81,7 +108,7 @@
             <div id="selectsport">
                 <p class="alltitles">SELECT SPORT</p>
                 <div id="sportlogodiv" onclick= "sportlogo()">
-                    <img id="sportlogo" src="https://d3qokvektr0ozw.cloudfront.net/SPORTICONS/SP2/ic_football_grey.png" width="52%" height="60%">
+                    <img id="sportlogo" src="./images/cricket.png" width="52%" height="60%">
                     <p id="onlogoname"></p>
                 </div>
             </div>
@@ -90,14 +117,14 @@
             <div id="dateselection">
                 <p class="alltitles">SELECT DATE</p>
                 <div id="dateandday">
-                    <div id="day1" class="dayanddate" onclick="day1()"><p id="d1" class="dayname">Today </p><p id="m1" class="dayname">22, Jan</p></div>
-                    <div id="day2" class="dayanddate" onclick="day2()"><p id="d2" class="dayname">Tomorrow</p><p id="m2" class="dayname">23, Jan</p></div>
-                    <div id="day3" class="dayanddate" onclick="day3()"><p id="d3" class="dayname">Monday</p><p id="m3" class="dayname">24, Jan</p></div>
-                    <div id="day4" class="dayanddate" onclick="day4()"><p id="d4" class="dayname">Tuesday</p><p id="m4" class="dayname">25, Jan</p></div>
-                    <div id="day5" class="dayanddate" onclick="day5()"><p id="d5" class="dayname">Wednesday</p><p id="m5" class="dayname">26, Jan</p></div>
-                    <div id="day6" class="dayanddate" onclick="day6()"><p id="d6" class="dayname">Thursday</p><p id="m6" class="dayname">27, Jan</p></div>
-                    <div id="day7" class="dayanddate" onclick="day7()"><p id="d7" class="dayname">Friday</p><p id="m7" class="dayname">28, Jan</p></div>
-                    <div id="day8" class="dayanddate" onclick="day8()"><p id="d8" class="dayname">Saturday</p><p id="m8" class="dayname">29, Jan</p></div>
+                    <div id="day1" class="dayanddate" onclick="resetDates(); getDateInfo(this); day1()"><p id="d1" class="dayname">Today </p><p id="m1" class="dayname">22, Jan</p></div>
+                    <div id="day2" class="dayanddate" onclick="resetDates(); getDateInfo(this); day2()"><p id="d2" class="dayname">Tomorrow</p><p id="m2" class="dayname">23, Jan</p></div>
+                    <div id="day3" class="dayanddate" onclick="resetDates(); getDateInfo(this); day3()"><p id="d3" class="dayname">Monday</p><p id="m3" class="dayname">24, Jan</p></div>
+                    <div id="day4" class="dayanddate" onclick="resetDates(); getDateInfo(this); day4()"><p id="d4" class="dayname">Tuesday</p><p id="m4" class="dayname">25, Jan</p></div>
+                    <div id="day5" class="dayanddate" onclick="resetDates(); getDateInfo(this); day5()"><p id="d5" class="dayname">Wednesday</p><p id="m5" class="dayname">26, Jan</p></div>
+                    <div id="day6" class="dayanddate" onclick="resetDates(); getDateInfo(this); day6()"><p id="d6" class="dayname">Thursday</p><p id="m6" class="dayname">27, Jan</p></div>
+                    <div id="day7" class="dayanddate" onclick="resetDates(); getDateInfo(this); day7()"><p id="d7" class="dayname">Friday</p><p id="m7" class="dayname">28, Jan</p></div>
+                    <div id="day8" class="dayanddate" onclick="resetDates(); getDateInfo(this); day8()"><p id="d8" class="dayname">Saturday</p><p id="m8" class="dayname">29, Jan</p></div>
                 </div>
             </div>
 
@@ -105,30 +132,30 @@
             <div id="selecttime">
                 <p class="alltitles">SELECT START TIME</p>
                 <div id="blocktime">
-                    <div id="time1" class="timeslot" onclick="time1()">12.00 AM 05.00 AM</div>
-                    <div id="time2" class="timeslot" onclick="time2()">05.00 AM 12.00 PM</div>
-                    <div id="time3" class="timeslot" onclick="time3()">12.00 PM 05.00 PM</div>
-                    <div id="time4" class="timeslot" onclick="time4()">05.00 PM 12.00 AM </div>
+                    <div id="time1" class="timeslot" onclick="resetTimeSlot(); time1(); setStartTime(this)">12:00 AM 05:00 AM</div>
+                    <div id="time2" class="timeslot" onclick="resetTimeSlot(); time2(); setStartTime(this)">05:00 AM 12:00 PM</div>
+                    <div id="time3" class="timeslot" onclick="resetTimeSlot(); time3(); setStartTime(this)">12:00 PM 05:00 PM</div>
+                    <div id="time4" class="timeslot" onclick="resetTimeSlot(); time4(); setStartTime(this)">05:00 PM 12:00 AM </div>
                 </div>
 
                 <div id="smalltimeupper">
-                    <div id="t1" class="timeupper" onclick="t1()">05.00 PM</div>
-                    <div id="t2" class="timeupper" onclick="t2()">05.30 PM</div>
-                    <div id="t3" class="timeupper" onclick="t3()">06.00 PM</div>
-                    <div id="t4" class="timeupper" onclick="t4()">06.30 PM</div>
-                    <div id="t5" class="timeupper" onclick="t5()">07.00 PM</div>
-                    <div id="t6" class="timeupper" onclick="t6()">07.30 PM</div>
-                    <div id="t7" class="timeupper" onclick="t7()">08.00 PM</div>
-                    <div id="t8" class="timeupper" onclick="t8()">08.30 PM</div>
-                    <div id="t9" class="timeupper" onclick="t9()">09.00 PM</div>
+                    <div id="t1" class="timeupper" onclick="resetUnselectedStartTimes(); t1(); getTimeInfo(this)">05:00 PM</div>
+                    <div id="t2" class="timeupper" onclick="resetUnselectedStartTimes(); t2(); getTimeInfo(this)">05:30 PM</div>
+                    <div id="t3" class="timeupper" onclick="resetUnselectedStartTimes(); t3(); getTimeInfo(this)">06:00 PM</div>
+                    <div id="t4" class="timeupper" onclick="resetUnselectedStartTimes(); t4(); getTimeInfo(this)">06:30 PM</div>
+                    <div id="t5" class="timeupper" onclick="resetUnselectedStartTimes(); t5(); getTimeInfo(this)">07:00 PM</div>
+                    <div id="t6" class="timeupper" onclick="resetUnselectedStartTimes(); t6(); getTimeInfo(this)">07:30 PM</div>
+                    <div id="t7" class="timeupper" onclick="resetUnselectedStartTimes(); t7(); getTimeInfo(this)">08:00 PM</div>
+                    <div id="t8" class="timeupper" onclick="resetUnselectedStartTimes(); t8(); getTimeInfo(this)">08:30 PM</div>
+                    <div id="t9" class="timeupper" onclick="resetUnselectedStartTimes(); t9(); getTimeInfo(this)">09:00 PM</div>
                 </div>
 
                 <div id="smalltimelower">
-                    <div id="t10" class="timeupper" onclick="t10()">09.30 PM</div>
-                    <div id="t11" class="timeupper" onclick="t11()">10.00 PM</div>
-                    <div id="t12" class="timeupper" onclick="t12()">10.30 PM</div>
-                    <div id="t13" class="timeupper" onclick="t13()">11.00 PM</div>
-                    <div id="t14" class="timeupper" onclick="t14()">11.30 PM</div>
+                    <div id="t10" class="timeupper" onclick="resetUnselectedStartTimes(); t10(); getTimeInfo(this)">09:30 PM</div>
+                    <div id="t11" class="timeupper" onclick="resetUnselectedStartTimes(); t11(); getTimeInfo(this)">10:00 PM</div>
+                    <div id="t12" class="timeupper" onclick="resetUnselectedStartTimes(); t12(); getTimeInfo(this)">10:30 PM</div>
+                    <div id="t13" class="timeupper" onclick="resetUnselectedStartTimes(); t13(); getTimeInfo(this)">11:00 PM</div>
+                    <div id="t14" class="timeupper" onclick="resetUnselectedStartTimes(); t14(); getTimeInfo(this)">11:30 PM</div>
                 </div>
             </div>
 
@@ -146,15 +173,15 @@
             <div id="selectcourt">
                 <p class="alltitles">SELECT COURT</p>
                 <div id="courtupper">
-                    <div id="court1" class="courtnames" onclick="court1()">9 a Side Court 1</div>
-                    <div id="court2" class="courtnames" onclick="court2()">9 a Side Court 2</div>
-                    <div id="court3" class="courtnames" onclick="court3()">7 a Side Court 1</div>
-                    <div id="court4" class="courtnames" onclick="court4()">7 a Side Court 2</div>
-                    <div id="court5" class="courtnames" onclick="court5()">6 a Side Court 1</div>
-                </div>
-                <div id="courtlower">
-                    <div id="court6" class="courtnames" onclick="court6()">6 a Side Court 2</div>
-                    <div id="court7" class="courtnames" onclick="court7()">9 a Side Court 1</div>
+                    <div id="court1" class="courtnames" onclick="court1(); getCourtInfo(this)">9 a Side Court 1</div>
+                    <div id="court2" class="courtnames" onclick="court2(); getCourtInfo(this)">9 a Side Court 2</div>
+                    <div id="court3" class="courtnames" onclick="court3(); getCourtInfo(this)">7 a Side Court 1</div>
+                    <div id="court4" class="courtnames" onclick="court4(); getCourtInfo(this)">7 a Side Court 2</div>
+                    <div id="court5" class="courtnames" onclick="court5(); getCourtInfo(this)">6 a Side Court 1</div>
+                </div>; 
+                <div id="courtlower">; 
+                    <div id="court6" class="courtnames" onclick="court6(); getCourtInfo(this)">6 a Side Court 2</div>
+                    <div id="court7" class="courtnames" onclick="court7(); getCourtInfo(this)">9 a Side Court 1</div>
                 </div>
             </div>
             
@@ -237,8 +264,19 @@
 
 </body>
 </html>
-
+<script type = 'module'>
+    import login_nav from './components/login_nav.js'
+    document.getElementById('navbar').innerHTML = login_nav();
+</script>
+<script type = 'module'>
+    import loginFunction from './components/login_function.js'
+    loginFunction();
+</script>
 <script src= ./scripts/bookVenue.js >
 
 
+</script>
+<script type = 'module'>
+    import footer from './components/footer.js'
+    document.querySelector('#footer').innerHTML = footer();
 </script>

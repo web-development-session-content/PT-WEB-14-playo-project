@@ -18,6 +18,8 @@ body {
   left: 0;
   right: 0;
   display: flex;
+  justify-content: space-between;
+  align-items: center;
   max-width: 2500px;
   width: 100%;
   padding: 0;
@@ -46,12 +48,13 @@ body {
 
 #nav_options {
   position: relative;
-  width: 350px;
+  width: 30%;
   height: 50%;
   display: flex;
-  justify-content: end;
+  justify-content: flex-end;
+  align-items: center;
   list-style-type: none;
-  margin: 1.5% 0 0 27.1%;
+  margin-left: auto;
   padding: 0;
   border: 1px solid transparent;
 }
@@ -62,6 +65,12 @@ li {
   margin-right: 10%;
   line-height: 23px;
   border: 1px solid transparent;
+  font-weight: 800;
+  cursor: pointer;
+  transition: all 0.8s ease-in-out;
+}
+li > a > span:hover {
+  color: rgb(214, 214, 214);
 }
 
 a {
@@ -69,8 +78,8 @@ a {
 }
 
 #logo {
-  width: 21.6%;
-  margin: 2.1% 0% 2% 16.5%;
+  width: 20%;
+  margin-left: 10%;
 }
 
 .link-btn {
@@ -84,6 +93,7 @@ a {
   display: flex;
   bottom: 9vh;
   justify-content: center;
+  align-items: center;
   width: 100%;
   left: 0;
   z-index: 1;
@@ -92,7 +102,10 @@ a {
 .download_inner {
   margin: 15px;
 }
-
+.download_inner img {
+  border-radius: 10px;
+  overflow: hidden;
+}
 .app_download_image {
   width: 170px;
   margin: 0px;

@@ -1,96 +1,140 @@
-body{
-    padding: 0%;
-    margin: 0%;
+body {
+  padding: 0%;
+  margin: 0%;
 }
-a{
-    text-decoration: none;
-    color:rgb(212, 212, 212);
+a {
+  text-decoration: none;
+  color: rgb(212, 212, 212);
 }
-#infooter{
-    width:100%;
-    height:290px;
-    display: flex;
-    background-color:#212121 ;
-}
-
-#div1{
-    width:45%;
-    height:90%;
-    margin-top: 2%;
+#infooter {
+  width: 100%;
+  height: 290px;
+  display: flex;
+  background-color: #212121;
 }
 
-#div2{
-    width:10%;
-    height:90%;
-    margin-top: 2%;
-    margin-left: 2%;
-    color: rgb(212, 212, 212);
-    font-size: 14px;
-    line-height: 12px;
-    font-family: Lato, sans-serif;
+#div1 {
+  width: 45%;
+  height: 90%;
+  margin-top: 2%;
 }
-#div3{
-    width:10%;
-    height:90%;
-    margin-top: 2%;
-    margin-left: 10%;
-    color: rgb(212, 212, 212);
-    font-size: 14px;
-    line-height: 12px;
-    font-family: Lato, sans-serif;
+
+#div2 {
+  width: 10%;
+  height: 90%;
+  margin-top: 2%;
+  margin-left: 2%;
+  color: rgb(212, 212, 212);
+  font-size: 14px;
+  line-height: 12px;
+  font-family: Lato, sans-serif;
 }
-#div4{
-    width:10%;
-    height:90%;
-    margin-top: 2%;
-    margin-left: 10%;
-    color: rgb(212, 212, 212);
-    font-size: 14px;
-    line-height: 12px;
-    font-family: Lato, sans-serif;
+#div2 > *:hover {
+  color: white;
+}
+
+#div3 {
+  width: 10%;
+  height: 90%;
+  margin-top: 2%;
+  margin-left: 10%;
+  color: rgb(212, 212, 212);
+  font-size: 14px;
+  line-height: 12px;
+  font-family: Lato, sans-serif;
+}
+#div3 > * > *:hover {
+  color: white;
+}
+
+#div4 {
+  width: 10%;
+  height: 90%;
+  margin-top: 2%;
+  margin-left: 10%;
+  color: rgb(212, 212, 212);
+  font-size: 14px;
+  line-height: 12px;
+  font-family: Lato, sans-serif;
+}
+#div4 > *:hover {
+  color: white;
+}
+
+#div4 > * > * {
+  display: flex;
+  gap: 0.4rem;
 }
 
 /* these css designs for left side logo and links below it */
-#weblogo{
-    width:25%;
-    height:28%;
-    margin-left: 15%;
+#weblogo {
+  width: 25%;
+  height: 28%;
+  margin-left: 15%;
 }
-#playstore{
-    width:23%;
-    height:27%;
-    display: flex;
-    justify-content: center;
-    justify-content: space-evenly;
-    margin-left: 15%;
-    margin-top: 3%;
+#weblogo img {
+  width: 90%;
+  height: 80%;
 }
-#copyright{
-    width:70%;
-    height:10%;
-    margin-left: 12%;
-    font-size: 13px;
-    font-style: italic;
-    line-height: 0%;
-    font-family: Lato, sans-serif;
-    color:rgb(128, 128, 128);
+#playstore {
+  width: 46%;
+  height: 18%;
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  justify-content: space-evenly;
+  margin-left: 15%;
+  margin-top: 3%;
 }
-#copy{
-    font-size: 10px;
+
+#playstore a > img {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
 }
-#loweritems{
-    width:88%;
-    height:20%;
-    display: flex;
-    margin-left: 12%;
-    color:white;
-    font-weight: 300;
-    font-family: Calibri Light;
-    /* line-height: 0%; */
-    text-align: flex-start;
-    justify-content: space-between;
+#copyright {
+  width: 70%;
+  height: 10%;
+  margin-left: 12%;
+  font-size: 13px;
+  font-style: italic;
+  line-height: 0%;
+  font-family: Lato, sans-serif;
+  color: rgb(128, 128, 128);
 }
-#hiring{
-    background-color:#4daa0b ;
-    /* line-height: 0%; */
+#copy {
+  font-size: 10px;
+}
+#loweritems {
+  width: 88%;
+  height: 20%;
+  display: flex;
+  margin-left: 12%;
+  color: white;
+  font-weight: 300;
+  font-family: Calibri Light;
+  /* line-height: 0%; */
+  text-align: flex-start;
+  justify-content: space-between;
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+  font-weight: 500;
+  font-size: 14px;
+}
+#loweritems > *:hover {
+  color: whitesmoke;
+}
+#hiring {
+  background-color: #8dff3c;
+  color: rgb(55, 55, 55);
+  font-weight: 700;
+  padding: 3px 8px;
+  border-radius: 5px;
+  /* line-height: 0%; */
+  transition: all 0.2s ease-in-out;
+}
+#hiring:hover {
+  background-color: rgb(97, 142, 65);
+  color: rgb(255, 255, 255);
 }
