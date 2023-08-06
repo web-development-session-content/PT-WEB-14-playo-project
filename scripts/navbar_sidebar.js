@@ -1,9 +1,8 @@
-function navbarsidebar(){
-
-    return ` <div id="navbox">
+function navbarsidebar() {
+  return ` <div id="navbox">
 
     <div id="navbox_img">
-    <a href="index.html">   <img src="https://playo-website.gumlet.net/logo/playo-logo-header-website.png?auto=compress,format&h=100" height="100%" width="100%"/></a>
+    <a href="index.html">   <img src="./images/playo.png" height="100%" width="100%"/></a>
     </div>
     
     <div id="navdiv">
@@ -14,9 +13,9 @@ function navbarsidebar(){
         <li>
         <div id="#mainmenu">
         <div id="mainm">
-        <div id="top1"><img  src="https://playo-website.gumlet.net/playo_functional/Icons/user_blank.svg" height="37"/></div>
+        <div id="top1"><img  src="./images/profile_main.png" height="37"/></div>
         <div><p id="mobnum">9021553726</p></div>
-        <div id="down"><img src="https://playo-website.gumlet.net/playo_functional/Icons/arrow_light.svg" height="10" /></div>
+       
        </div>
         <div id="menu">
         <ul type="none">
@@ -41,21 +40,21 @@ function navbarsidebar(){
 
 
     <div id="verticalbox1" >
-        <img  src="https://playo-website.gumlet.net/playo_functional/Icons/user_blank.svg" >
+        <img  src="./images/profile_main.png" >
         <p id="mob">9021553726</p>
        <div id="line"></div>
 
        <div id="sidebtn">
      <a href="login_profile.html" >  <div id="profile" class="feedback1">
-           <img src="https://playo-website.gumlet.net/icons/edit-profile.svg" />
+           <img src="./images/profile.png" />
            <p style="color:red">Profile</p>
        </div></a>
        <a href="login_mybooking.html" > <div id="profile" id="gg1" >
-        <img src="https://playo-website.gumlet.net/icons/bullet-list.svg" />
+        <img src="./images/booking.png" />
         <p>My Booking</p>
     </div></a>
     <a id="idr" href="login_feedback.html" > <div id="profile">
-        <img src="https://playo-website.gumlet.net/icons/back-arrow.svg" />
+        <img src="./images/feedback.png" />
         <p>Feedback</p>
     </div></a>
 </div>
@@ -67,12 +66,10 @@ function navbarsidebar(){
 
     </div>
 
-</div>`
-
+</div>`;
 }
 
-export default navbarsidebar
-
+export default navbarsidebar;
 
 /* <div id="menu1">
         <ul type="none">
