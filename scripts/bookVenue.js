@@ -1,12 +1,13 @@
-
-
-
+var count=1;
+var costvalue = 1;
+var cost = document.getElementById("cost");
+var emptydiv= document.getElementById("emptycart");
     
 //Login and pop up full functionalities start
 
-document.querySelector("#logo").addEventListener("click", ()=>{
-    window.location.href = "index.html";
-})
+// document.querySelector("#logo").addEventListener("click", ()=>{
+//     window.location.href = "index.html";
+// })
 
 
 // navbar popup functionality
@@ -388,10 +389,10 @@ function t14()
 }
 
 // below functions for the plus and minus features of duration
-var count=1;
-var costvalue;
+
 function plus()
 {
+    let cost = document.getElementById("cost");
     count++;
     if(count >5){
         alert("We Dont offer More than 5 hrs");
@@ -411,14 +412,12 @@ function plus()
     
     costvalue= count*2200;
     cost.innerHTML= "Total cost for these booking - INR"+" "+costvalue;
-
     return costvalue;
 }
 
 function minus(costvalue)
 {
-    
-    
+    let cost = document.getElementById("cost");
     if(count == 1){
 
         return false
@@ -439,14 +438,13 @@ function minus(costvalue)
 
     cost.innerHTML= "Total cost for these booking - INR"+" " + costvalue;
     //let presentValue = costvalue;
-
-
-
 }
+
 // below functions for changing the bg color and color of court names
-var cost= document.getElementById("cost");
+
 function court1()
 {
+    console.log(count);
     let court1=document.getElementById("court1");
     court1.style.backgroundColor="#4daa0b";
     court1.style.color="white";
@@ -510,7 +508,7 @@ function court7()
 }
 
 // these function for add elements to the cart
-var emptydiv= document.getElementById("emptycart");
+
 function addtocart()
 {
     let mycart= document.getElementById("mycart");
@@ -583,22 +581,19 @@ function addtocart()
     checkoutcostdiv.append(pricegreendiv, checkoutbutton)
 
 
-
-
-
-   emptydiv.append(sportname, courtnamediv, timedatecartdiv, costdiv, horizontal,checkoutcostdiv);
-
-
+    console.log("sportname", sportname);
+    console.log("courtnamediv", courtnamediv);
+    console.log("timedatecartdiv", timedatecartdiv);
+    console.log("costdiv", costdiv);
+    console.log("horizontal", horizontal);
+    console.log("checkoutcostdiv", checkoutcostdiv);
+    
    checkoutbutton.addEventListener("click", ()=>{
-
-
     let price = count*2200;
     localStorage.setItem("finalPrice", price);
     window.location.href = "pay.html";
-   
-
-
    })
+   emptydiv.append(sportname, courtnamediv, timedatecartdiv, costdiv, horizontal,checkoutcostdiv);
 
 }
 

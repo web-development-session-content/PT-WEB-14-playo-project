@@ -1,3 +1,7 @@
+body{
+  margin:0px;
+  padding:0px;
+}
 #con {
   display: grid;
   grid-template-columns: repeat(2, 47.5%);
@@ -8,14 +12,6 @@
   margin-bottom: 50px;
   border: 1px solid transparent;
 }
-
-
-
-
-
-
-
-
 
 #places {
   height: 340px;
@@ -80,7 +76,7 @@
   height: 70px;
   margin: auto;
  display: flex;
- margin-top: 1%;
+ margin-top: 70px;
  border-radius: 10px;
   margin-bottom: 40px;
   font-family: 'lato', sans-serif;
@@ -162,7 +158,11 @@ display: flex;
  border: transparent;
  transform: translateY(-10px);
 }
-
+#explorenavbar{
+  background-color: black;
+  height: 75px !important;
+  padding-top: 0 !important;
+}
 
 
 

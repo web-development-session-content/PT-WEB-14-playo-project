@@ -88,7 +88,7 @@
     //Edit 
     function fetchNews(){
     let apiKey_blog = "b140754e118c4b63a8e580772d4446a1";
-    let bloglink = `https://newsapi.org/v2/top-headlines?country=in&category=sports&pageSize=10&apiKey=${process.env.BLOG_API_KEY}`;
+    let bloglink = `https://newsapi.org/v2/top-headlines?country=in&category=sports&pageSize=10&apiKey=${apiKey_blog}`;
     fetch(bloglink)
     .then((res)=>{
         return res.json();
@@ -127,7 +127,7 @@
 
        
         let apiKey_health = "b140754e118c4b63a8e580772d4446a1";
-        let bloglink_health = `https://newsapi.org/v2/top-headlines?country=in&category=health&pageSize=12&apiKey=${process.env.BLOG_API_KEY}`;
+        let bloglink_health = `https://newsapi.org/v2/top-headlines?country=in&category=health&pageSize=12&apiKey=${apiKey_health}`;
         
         fetch(bloglink_health)
         .then((res)=>{
@@ -161,7 +161,7 @@
 
         //Api work ==>
         let apiKey_blog = "b140754e118c4b63a8e580772d4446a1";
-        let bloglink = `https://newsapi.org/v2/top-headlines?country=in&category=sports&pageSize=10&apiKey=${process.env.BLOG_API_KEY}`;
+        let bloglink = `https://newsapi.org/v2/top-headlines?country=in&category=sports&pageSize=10&apiKey=${apiKey_blog}`;
         fetch(bloglink)
         .then((res)=>{
             return res.json();
@@ -202,7 +202,7 @@
      
         console.log("test")
         let search_key = "b140754e118c4b63a8e580772d4446a1";
-        let search_link = `https://newsapi.org/v2/everything?q=${value}&from=2022-01-18&sortBy=popularity&pageSize=10&language=en&apiKey=${process.env.BLOG_API_KEY}`;
+        let search_link = `https://newsapi.org/v2/everything?q=${value}&from=2022-01-18&sortBy=popularity&pageSize=10&language=en&apiKey=${search_key}`;
       
 
         fetch(search_link)

@@ -9,10 +9,9 @@ document.querySelector("#logo").addEventListener("click", ()=>{
 // navbar popup functionality
 document.querySelector("#giveOTP").style.visibility = "hidden";
 
-const open = document.getElementById("nav2div");
+const open = document.getElementById("myBtn");
 const modal_container = document.getElementById("modal_container");
 const close = document.getElementById("close");
-
 open.addEventListener("click", ()=>{
     modal_container.classList.add("show")
 });
@@ -71,7 +70,8 @@ document.querySelector("#sendOTP").addEventListener("click", ()=>{
 
         document.querySelector("#giveOTP").addEventListener("click", ()=>{
 
-            let otp = document.querySelector("input").value;
+            let otp = document.querySelector("#input").value;
+            console.log(otp);
             if(otp == "123456"){
                 // alert("success");
                 modal_container.classList.remove("show")
