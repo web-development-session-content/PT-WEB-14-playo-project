@@ -1,6 +1,6 @@
 #con {
   display: grid;
-  grid-template-columns: repeat(2, 47.5%);
+  /* grid-template-columns: repeat(1, 47.5%); */
   width: 64%;
   margin: auto;
   grid-gap: 30px 50px;
@@ -9,13 +9,52 @@
   border: 1px solid transparent;
 }
 
+/* my css */
+#con > div{
+  display: flex;
+}
+.btnBook{
+  width: 80px;
+}
 
+.dataDay{
+  width: 70px;
+  margin: 5px 0 0 0;
+  padding: 5px;
+  border: 1px solid black;
+  border-radius: 5px 0 0 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* align-content: center; */
+}
+/* #container1{
+} */
+  
+/* #container1 div:nth-child(2){ */
+  .dataDetails{
+  display: flex;
+  width: 100%;
+  margin: 5px 0 0 0;
+  padding: 5px;
+  border: 1px solid black;
+  border-left: none;
+  border-radius:0 5px 5px 0;
+  justify-content: space-between;
+  align-items: end;
+  /* display: flex; */
+}
 
+.btnBook{
+  background-color: #00b562;
+  border: none;
+  border-radius: 3px 3px 3px 3px;
+  /* display: flex;
+  align-items: end;
+  justify-content: end; */
+}
 
-
-
-
-
+/* end mycss */
 
 #places {
   height: 340px;
