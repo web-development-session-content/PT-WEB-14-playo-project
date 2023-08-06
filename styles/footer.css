@@ -52,13 +52,13 @@ a{
 
 /* these css designs for left side logo and links below it */
 #weblogo{
-    width:25%;
-    height:28%;
-    margin-left: 15%;
+    width:33%;
+    height:25%;
+    margin-left: 12%;
 }
 #playstore{
-    width:23%;
-    height:27%;
+    width:19%;
+    height:22%;
     display: flex;
     justify-content: center;
     justify-content: space-evenly;
@@ -92,5 +92,6 @@ a{
 }
 #hiring{
     background-color:#4daa0b ;
+    width: 50px;
     /* line-height: 0%; */
 }

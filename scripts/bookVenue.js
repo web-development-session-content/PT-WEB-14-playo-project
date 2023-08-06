@@ -1,4 +1,7 @@
+import footer from "../components/footer.js"
 
+let foot = document.querySelector("#footer");
+foot.innerHTML = footer();
 
 
     
@@ -149,6 +152,8 @@ document.querySelector("#onlogoname").textContent = category;
 
 var cartobj={};
 // these function for change bg color and font color logo and sport name
+document.querySelector("#sportlogodiv").addEventListener("click",sportlogo);
+
 function sportlogo()
 {
     let sportdiv= document.getElementById("sportlogodiv");
@@ -161,9 +166,10 @@ function sportlogo()
 
 // these functions for the change color of day name and date div
 
+document.getElementById("day1").addEventListener("click",day1);
 function day1()
 {
-    let day1= document.getElementById("day1");
+    var day1= document.getElementById("day1");
     day1.style.backgroundColor="#4daa0b";
 
     let d1= document.getElementById("d1");
@@ -173,7 +179,7 @@ function day1()
     m1.style.color="white";
 
 }
-
+document.getElementById("day2").addEventListener("click",day2);
 function day2()
 {
     let day2= document.getElementById("day2");
@@ -186,7 +192,7 @@ function day2()
     m2.style.color="white";
 
 }
-
+document.getElementById("day3").addEventListener("click",day3);
 function day3()
 {
     let day3= document.getElementById("day3");
@@ -198,7 +204,7 @@ function day3()
     let m3= document.getElementById("m3");
     m3.style.color="white";
 }
-
+document.getElementById("day4").addEventListener("click",day4);
 function day4()
 {
     let day4= document.getElementById("day4");
@@ -210,7 +216,7 @@ function day4()
     let m4= document.getElementById("m4");
     m4.style.color="white";
 }
-
+document.getElementById("day5").addEventListener("click",day5);
 function day5()
 {
     let day5= document.getElementById("day5");
@@ -222,7 +228,7 @@ function day5()
     let m5= document.getElementById("m5");
     m5.style.color="white";
 }
-
+document.getElementById("day6").addEventListener("click",day6);
 function day6()
 {
     let day6= document.getElementById("day6");
@@ -234,7 +240,7 @@ function day6()
     let m6= document.getElementById("m6");
     m6.style.color="white";
 }
-
+document.getElementById("day7").addEventListener("click",day7);
 function day7()
 {
     let day7= document.getElementById("day7");
@@ -246,7 +252,7 @@ function day7()
     let m7= document.getElementById("m7");
     m7.style.color="white";
 }
-
+document.getElementById("day8").addEventListener("click",day8);
 function day8()
 {
     let day8= document.getElementById("day8");
@@ -259,6 +265,7 @@ function day8()
     m8.style.color="white";
 }
 // these functions for change bg color and font color of select start time block time divs
+document.getElementById("time1").addEventListener("click",time1);
 function time1()
 {
     let time1=document.getElementById("time1");
@@ -266,21 +273,21 @@ function time1()
     time1.style.color="white";
 
 }
-
+document.getElementById("time2").addEventListener("click",time2);
 function time2()
 {
     let time2=document.getElementById("time2");
     time2.style.backgroundColor="#4daa0b";
     time2.style.color="white";
 }
-
+document.getElementById("time3").addEventListener("click",time3);
 function time3()
 {
     let time3=document.getElementById("time3");
     time3.style.backgroundColor="#4daa0b";
     time3.style.color="white";
 }
-
+document.getElementById("time4").addEventListener("click",time4);
 function time4()
 {
     let time4=document.getElementById("time4");
@@ -289,97 +296,98 @@ function time4()
 }
 
 // these functions for  change bg color of small small time intervals
+document.getElementById("t1").addEventListener("click",t1);
 function t1()
 {
     let t1=document.getElementById("t1");
     t1.style.backgroundColor="#4daa0b";
     t1.style.color="white";
 }
-
+document.getElementById("t2").addEventListener("click",t2);
 function t2()
 {
     let t2=document.getElementById("t2");
     t2.style.backgroundColor="#4daa0b";
     t2.style.color="white";
 }
-
+document.getElementById("t3").addEventListener("click",t3);
 function t3()
 {
     let t3=document.getElementById("t3");
     t3.style.backgroundColor="#4daa0b";
     t3.style.color="white";
 }
-
+document.getElementById("t4").addEventListener("click",t4);
 function t4()
 {
     let t4=document.getElementById("t4");
     t4.style.backgroundColor="#4daa0b";
     t4.style.color="white";
 }
-
+document.getElementById("t5").addEventListener("click",t5);
 function t5()
 {
     let t5=document.getElementById("t5");
     t5.style.backgroundColor="#4daa0b";
     t5.style.color="white";
 }
-
+document.getElementById("t6").addEventListener("click",t6);
 function t6()
 {
     let t6=document.getElementById("t6");
     t6.style.backgroundColor="#4daa0b";
     t6.style.color="white";
 }
-
+document.getElementById("t7").addEventListener("click",t7);
 function t7()
 {
     let t7=document.getElementById("t7");
     t7.style.backgroundColor="#4daa0b";
     t7.style.color="white";
 }
-
+document.getElementById("t8").addEventListener("click",t8);
 function t8()
 {
     let t8=document.getElementById("t8");
     t8.style.backgroundColor="#4daa0b";
     t8.style.color="white";
 }
-
+document.getElementById("t9").addEventListener("click",t9);
 function t9()
 {
     let t9=document.getElementById("t9");
     t9.style.backgroundColor="#4daa0b";
     t9.style.color="white";
 }
-
+document.getElementById("t10").addEventListener("click",t10);
 function t10()
 {
     let t10=document.getElementById("t10");
     t10.style.backgroundColor="#4daa0b";
     t10.style.color="white";
 }
-
+document.getElementById("t11").addEventListener("click",t11);
 function t11()
 {
     let t11=document.getElementById("t11");
     t11.style.backgroundColor="#4daa0b";
     t11.style.color="white";
 }
-
+document.getElementById("t12").addEventListener("click",t12);
 function t12()
 {
     let t12=document.getElementById("t12");
     t12.style.backgroundColor="#4daa0b";
     t12.style.color="white";
 }
-
+document.getElementById("t13").addEventListener("click",t13);
 function t13()
 {
     let t13=document.getElementById("t13");
     t13.style.backgroundColor="#4daa0b";
     t13.style.color="white";
 }
-
+document.getElementById("t14").addEventListener("click",t14);
 function t14()
 {
     let t14=document.getElementById("t14");
@@ -390,6 +398,7 @@ function t14()
 // below functions for the plus and minus features of duration
 var count=1;
 var costvalue;
+document.querySelector("#plus").addEventListener("click",plus);
 function plus()
 {
     count++;
@@ -414,7 +423,7 @@ function plus()
 
     return costvalue;
 }
-
+document.querySelector("#minus").addEventListener("click",minus);
 function minus(costvalue)
 {
     
@@ -445,6 +454,7 @@ function minus(costvalue)
 }
 // below functions for changing the bg color and color of court names
 var cost= document.getElementById("cost");
+document.querySelector("#court1").addEventListener("click",court1);
 function court1()
 {
     let court1=document.getElementById("court1");
@@ -454,7 +464,7 @@ function court1()
     cost.innerHTML="Total cost for these booking - INR"+" "+2200*count;
 
 }
-
+document.querySelector("#court2").addEventListener("click",court2);
 function court2()
 {
     let court2=document.getElementById("court2");
@@ -463,7 +473,7 @@ function court2()
 
     cost.innerHTML="Total cost for these booking - INR"+" "+2200*count;
 }
-
+document.querySelector("#court3").addEventListener("click",court3);
 function court3()
 {
     let court3=document.getElementById("court3");
@@ -472,7 +482,7 @@ function court3()
 
     cost.innerHTML="Total cost for these booking - INR"+" "+2200*count;
 }
-
+document.querySelector("#court4").addEventListener("click",court4);
 function court4()
 {
     let court4=document.getElementById("court4");
@@ -481,7 +491,7 @@ function court4()
 
     cost.innerHTML="Total cost for these booking - INR"+" "+2200*count;
 }
-
+document.querySelector("#court5").addEventListener("click",court5);
 function court5()
 {
     let court5=document.getElementById("court5");
@@ -490,7 +500,7 @@ function court5()
 
     cost.innerHTML="Total cost for these booking - INR"+" "+2200*count;
 }
-
+document.querySelector("#court6").addEventListener("click",court6);
 function court6()
 {
     let court6=document.getElementById("court6");
@@ -499,7 +509,7 @@ function court6()
 
     cost.innerHTML="Total cost for these booking - INR"+" "+2200*count;
 }
-
+document.querySelector("#court7").addEventListener("click",court7);
 function court7()
 {
     let court7=document.getElementById("court7");
@@ -511,6 +521,7 @@ function court7()
 
 // these function for add elements to the cart
 var emptydiv= document.getElementById("emptycart");
+document.querySelector("#btn1").addEventListener("click",addtocart);
 function addtocart()
 {
     let mycart= document.getElementById("mycart");
@@ -527,7 +538,7 @@ function addtocart()
    var courtnamediv= document.createElement("div");
    courtnamediv.id="courtnamediv";
    var courtimage= document.createElement("img");
-   courtimage.src="https://playo-website.gumlet.net/icons/court.svg";
+   courtimage.src="https://playo-website.gumlet.io/playo-website-v2/logos-icons/Court+Outline+1.svg";
    var courtname= document.createElement("p");
    courtname.textContent="6 a Side Court 1";
    courtnamediv.append(courtimage, courtname);
@@ -540,7 +551,7 @@ function addtocart()
     datecart.id="datecart";
     
     var datecartimg= document.createElement("img");
-    datecartimg.src = "https://playo-website.gumlet.net/icons/calendar.svg";
+    datecartimg.src = "https://playo-website.gumlet.io/playo-website-v2/logos-icons/appointment.svg";
     var datename = document.createElement("p");
     datename.textContent= "22, January 2022";
     datecart.append(datecartimg, datename);
@@ -549,7 +560,7 @@ function addtocart()
     timecart.id="timecart";
     timedatecartdiv.append(datecart, timecart);
     var timecartimg = document.createElement("img");
-    timecartimg.src="https://playo-website.gumlet.net/icons/clock.svg";
+    timecartimg.src="https://playo-website.gumlet.io/playo-website-v2/logos-icons/time.svg";
     var timename = document.createElement("p");
     timename.textContent= "06.00 PM to 07.00 PM";
     timecart.append(timecartimg, timename);
@@ -559,7 +570,7 @@ function addtocart()
     var costdiv= document.createElement("div");
     costdiv.id="costdiv";
     var costimg= document.createElement("img");
-    costimg.src="https://playo-website.gumlet.net/icons/money.svg";
+    costimg.src="https://playo-website.gumlet.io/playo-website-v2/logos-icons/money.svg";
     var costname=document.createElement("p");
     costname.textContent=" INR "+" "+ count*2200;
     costdiv.append(costimg, costname);

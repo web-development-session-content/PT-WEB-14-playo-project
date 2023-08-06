@@ -29,20 +29,20 @@
 
 
       <div id="filter">
-        <div id="locationfilter">
-          <img src="https://playov2.gumlet.net//explore/Group+3539%402x.png" alt="" class="icon" />
+        <div id="locationfilter">"
+          <img src="https://playo.co/_next/image?url=https%3A%2F%2Fplayo-website.gumlet.io%2Fplayo-website-v2%2Fshare-pages%2Fpoint-icon.png&w=1920&q=75" alt="filter" class="icon" />
           <div class="align">
             <P class="filtertext">Location</P>
             
             <span id="place"></span>
           </div>
           <div id="searchicon">
-            <img src="https://playov2.gumlet.net//explore/location_search@2x.png" alt="" class="icon2" />
-               <P style="transform: translateY(15px);" id="detect">Detect</P>
+            <img src="https://playo-website.gumlet.io/playo-website-v2/logos-icons/search-icon.svg" alt="Sicon" class="icon2" />
+               <P style="transform: translateY(15px);" id="detect"></P>
           </div>
         </div>
         <div id="searchfilter">
-          <img src="https://playov2.gumlet.net//explore/search-24px@2x.png" alt="" class="icon">
+          <img src="https://cdn-icons-png.flaticon.com/512/62/62740.png" alt="srfilter" class="icon">
           <div class="align">
             <p class="filtertext">Search</p>
             <p class="shade filtertext"> For example,"Football"</p>
@@ -50,21 +50,26 @@
           </div>
         </div>
         <div id="sportsfilter">
-          <img src="https://playov2.gumlet.net//explore/Group+18%402x.png" alt="" class="icon" >
+          <img src="https://playo-website.gumlet.io/playo-website-v2/logos-icons/sports-filter.svg" alt="sportfilter" class="icon" >
           <div class="align">
             <p class="filtertext">Sport</p>
-            <select class="bold space">
+            <select class="bold space" id="sportfilt">
               <option value="Select Sports">Select Sports</option>
+              <option value="Cricket">Cricket</option>
+              <option value="Football">Football</option>
+              <option value="Badminton">Badminton</option>
+              <option value="Swimming">Swimming</option>
               </select>
              </div>
           
         </div>
         <div id="catfilter">
-          <img src="https://playov2.gumlet.net//explore/menu_vs_outlined@2x.png" alt="" class="icon">
+          <img src="https://w7.pngwing.com/pngs/37/23/png-transparent-computer-icons-icon-design-information-computer-software-category-management-text-trademark-logo.png" alt="catfilter" class="icon">
           <div class="align">
             <p class="filtertext">Categories</p>
             <select class="bold space1">
               <option value="Select Sports">All</option>
+
               </select>
           </div>
         </div>
@@ -83,14 +88,14 @@
       <div id="infooter">
         <div id="div1">
             <div id="weblogo">
-                <a href="index.html"><img src="https://playo-website.gumlet.net/logo/playo-logo-footer-website.png?auto=format,compress&h=100" alt="logo" width="100%" height="100%"></a>
+                <a href="index.html"><img src="https://blog.playo.co/wp-content/uploads/2020/11/Logo_dark_500@2x-scaled.jpg" alt="logo" width="70%" ></a>
             </div>
             <div id="playstore">
                 <a href="https://play.google.com/store/apps/details?id=com.techmash.playo">
-                    <img src="https://playo-website.gumlet.net/icons/download-android.png?auto=format,compress " >
+                    <img src="https://img.freepik.com/free-icon/playstore_318-278806.jpg?w=2000" width="70%" alt="logo">
                 </a>
                 <a href="https://apps.apple.com/us/app/playo-local-sports-community/id1018786950?ls=1">
-                    <img src="https://playo-website.gumlet.net/icons/download-ios.png?auto=format,compress" >
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/67/App_Store_%28iOS%29.svg/640px-App_Store_%28iOS%29.svg.png" width="60%" alt="logo">
                 </a>
             </div>
             <div id="copyright">
@@ -233,6 +238,7 @@
 
     searchLocation();
     //Search Function Code 
+    var filt;
     async function searchLocation(){
         //Getting the value again
         var search_value = my_value.city;
@@ -242,19 +248,32 @@
 
         let response = await fetch("./database/activityData.json");
         let data = await response.json();
-        //console.log(data);
+        console.log(data);
 
         //Writing Function for filter data based on search results
 
         let filterData = data.filter((el)=>{
-            let regex = new RegExp(`^${search_value}`, "gi" );
-            return el.city.match(regex);
+            // let regex = new RegExp(`^${search_value}`, "gi" );
+
+            return el.city.charAt(1)==search_value.charAt(1);
         })
-
+        apprndData(filterData)
+        
+        
         console.log(filterData);
-       apprndData(filterData)
+        filt=filterData;
+       
     }
+    var sportfilter=document.querySelector("#sportfilt");
+        sportfilter.addEventListener("change",function(){
+           event.preventDefault();
 
+          let filtsport=filt.filter(function(el){
+          return el.sport===sportfilter.value;
+        })
+        console.log(filtsport);
+        apprndData(filtsport)
+        })
 
   //===========================================================================>
 
@@ -264,6 +283,7 @@
    //Append Data Function 
    function apprndData(data){
     // console.log(data)
+    con.innerHTML="";
     data.map((el)=>{
       let y = `  <div onclick="details(${el.id})" id= "places" class="clickdiv">
         <div>

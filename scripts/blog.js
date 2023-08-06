@@ -88,7 +88,7 @@
     //Edit 
     function fetchNews(){
     let apiKey_blog = "b140754e118c4b63a8e580772d4446a1";
-    let bloglink = `https://newsapi.org/v2/top-headlines?country=in&category=sports&pageSize=10&apiKey=${process.env.BLOG_API_KEY}`;
+    let bloglink = `https://newsapi.org/v2/top-headlines?country=in&category=sports&pageSize=10&apiKey=${apiKey_blog}`;
     fetch(bloglink)
     .then((res)=>{
         return res.json();
@@ -122,12 +122,17 @@
         document.querySelector("#sports-news").style.borderBottom = "none";
         document.querySelector("#health-news").style.backgroundColor = "white";
         document.querySelector("#health-news").style.borderBottom = "3px solid #548A2F"
-     
+        document.querySelector("#cricket-news").style.backgroundColor = "#F3F3F2";
+        document.querySelector("#cricket-news").style.borderBottom = "none";
+        document.querySelector("#football-news").style.backgroundColor = "#F3F3F2";
+        document.querySelector("#football-news").style.borderBottom = "none";
+        document.querySelector("#tennis-news").style.backgroundColor = "#F3F3F2";
+        document.querySelector("#tennis-news").style.borderBottom = "none";
 
 
        
         let apiKey_health = "b140754e118c4b63a8e580772d4446a1";
-        let bloglink_health = `https://newsapi.org/v2/top-headlines?country=in&category=health&pageSize=12&apiKey=${process.env.BLOG_API_KEY}`;
+        let bloglink_health = `https://newsapi.org/v2/top-headlines?country=in&category=health&pageSize=12&apiKey=${apiKey_health}`;
         
         fetch(bloglink_health)
         .then((res)=>{
@@ -158,10 +163,16 @@
         document.querySelector("#sports-news").style.borderBottom = "3px solid #548A2F"
         document.querySelector("#health-news").style.backgroundColor = "#F3F3F2";
         document.querySelector("#health-news").style.borderBottom = "none";
+        document.querySelector("#cricket-news").style.backgroundColor = "#F3F3F2";
+        document.querySelector("#cricket-news").style.borderBottom = "none";
+        document.querySelector("#football-news").style.backgroundColor = "#F3F3F2";
+        document.querySelector("#football-news").style.borderBottom = "none";
+        document.querySelector("#tennis-news").style.backgroundColor = "#F3F3F2";
+        document.querySelector("#tennis-news").style.borderBottom = "none";
 
         //Api work ==>
         let apiKey_blog = "b140754e118c4b63a8e580772d4446a1";
-        let bloglink = `https://newsapi.org/v2/top-headlines?country=in&category=sports&pageSize=10&apiKey=${process.env.BLOG_API_KEY}`;
+        let bloglink = `https://newsapi.org/v2/top-headlines?country=in&category=sports&pageSize=10&apiKey=${apiKey_blog}`;
         fetch(bloglink)
         .then((res)=>{
             return res.json();
@@ -202,7 +213,7 @@
      
         console.log("test")
         let search_key = "b140754e118c4b63a8e580772d4446a1";
-        let search_link = `https://newsapi.org/v2/everything?q=${value}&from=2022-01-18&sortBy=popularity&pageSize=10&language=en&apiKey=${process.env.BLOG_API_KEY}`;
+        let search_link = `https://newsapi.org/v2/everything?q=${value}&from=2022-01-18&sortBy=popularity&pageSize=10&language=en&apiKey=${search_key}`;
       
 
         fetch(search_link)
@@ -225,10 +236,113 @@
 
 
 
+    document.querySelector("#cricket-news").addEventListener("click", ()=>{
+        console.log("Test")
+
+        document.querySelector("#sports-news").style.backgroundColor = "#F3F3F2";
+        document.querySelector("#sports-news").style.borderBottom = "none";
+        document.querySelector("#health-news").style.backgroundColor = "#F3F3F2";
+        document.querySelector("#health-news").style.borderBottom = "none";
+        document.querySelector("#football-news").style.backgroundColor = "#F3F3F2";
+        document.querySelector("#football-news").style.borderBottom = "none";
+        document.querySelector("#tennis-news").style.backgroundColor = "#F3F3F2";
+        document.querySelector("#tennis-news").style.borderBottom = "none";
+        document.querySelector("#cricket-news").style.backgroundColor = "white";
+        document.querySelector("#cricket-news").style.borderBottom = "3px solid #548A2F"
+     
+
+
+       
+        let apiKey_health = "b140754e118c4b63a8e580772d4446a1";
+        let bloglink_health = `https://newsapi.org/v2/top-headlines?country=in&category=sport&q=cricket&pageSize=12&apiKey=${apiKey_health}`;
+        
+        fetch(bloglink_health)
+        .then((res)=>{
+            return res.json();
+        })
+        .then((res)=>{
+            let appendlocation = document.querySelector(".dynamic-news");
+            appendNews(res.articles, appendlocation);
+        })
+        .catch((e)=>{
+            console.log(e);
+            
+        })
+
+    })
+
+
+    document.querySelector("#football-news").addEventListener("click", ()=>{
+        console.log("Test")
+
+        document.querySelector("#sports-news").style.backgroundColor = "#F3F3F2";
+        document.querySelector("#sports-news").style.borderBottom = "none";
+        document.querySelector("#health-news").style.backgroundColor = "#F3F3F2";
+        document.querySelector("#health-news").style.borderBottom = "none";
+        document.querySelector("#tennis-news").style.backgroundColor = "#F3F3F2";
+        document.querySelector("#tennis-news").style.borderBottom = "none";
+        document.querySelector("#cricket-news").style.backgroundColor = "#F3F3F2";
+        document.querySelector("#cricket-news").style.borderBottom = "none";
+        document.querySelector("#football-news").style.backgroundColor = "white";
+        document.querySelector("#football-news").style.borderBottom = "3px solid #548A2F"
+     
+
+
+       
+        let apiKey_health = "b140754e118c4b63a8e580772d4446a1";
+        let bloglink_health = `https://newsapi.org/v2/top-headlines?country=in&category=sport&q=football&pageSize=12&apiKey=${apiKey_health}`;
+        
+        fetch(bloglink_health)
+        .then((res)=>{
+            return res.json();
+        })
+        .then((res)=>{
+            let appendlocation = document.querySelector(".dynamic-news");
+            appendNews(res.articles, appendlocation);
+        })
+        .catch((e)=>{
+            console.log(e);
+            
+        })
+
+    })
 
 
 
+    document.querySelector("#tennis-news").addEventListener("click", ()=>{
+        console.log("Test")
 
+        document.querySelector("#sports-news").style.backgroundColor = "#F3F3F2";
+        document.querySelector("#sports-news").style.borderBottom = "none";
+        document.querySelector("#health-news").style.backgroundColor = "#F3F3F2";
+        document.querySelector("#health-news").style.borderBottom = "none";
+        document.querySelector("#cricket-news").style.backgroundColor = "#F3F3F2";
+        document.querySelector("#cricket-news").style.borderBottom = "none";
+        document.querySelector("#football-news").style.backgroundColor = "#F3F3F2";
+        document.querySelector("#football-news").style.borderBottom = "none";
+        document.querySelector("#tennis-news").style.backgroundColor = "white";
+        document.querySelector("#tennis-news").style.borderBottom = "3px solid #548A2F"
+     
+
+
+       
+        let apiKey_health = "b140754e118c4b63a8e580772d4446a1";
+        let bloglink_health = `https://newsapi.org/v2/top-headlines?country=in&category=sport&q=tennis&pageSize=12&apiKey=${apiKey_health}`;
+        
+        fetch(bloglink_health)
+        .then((res)=>{
+            return res.json();
+        })
+        .then((res)=>{
+            let appendlocation = document.querySelector(".dynamic-news");
+            appendNews(res.articles, appendlocation);
+        })
+        .catch((e)=>{
+            console.log(e);
+            
+        })
+
+    })
 
 
 

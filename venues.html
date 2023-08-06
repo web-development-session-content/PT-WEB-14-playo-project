@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -16,41 +17,52 @@
     <!-- LINK FOR Lato font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Open+Sans:wght@300;400;500;600;700;800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Open+Sans:wght@300;400;500;600;700;800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
 
 </head>
+
 <body>
-    
-    <div id="main" >
+
+    <div id="main">
 
         <!-- navbar start -->
         <div id="navbar">
             <div id="explorenavbar">
 
-                <div id="logodiv" >
-                    <img id="logo" src="https://playo-website.imgix.net/company/logo1.png?auto=compress,format" alt="playo logo">
+                <div id="logodiv">
+                    <img id="logo" src="https://playo-website.imgix.net/company/logo1.png?auto=compress,format"
+                        alt="playo logo">
                 </div>
-        
-                <div id="nav2div"> 
-                    <img id="pplogo" src="https://playo-website.gumlet.net/playo_functional/Icons/user_blank.svg" alt="">
+
+                <div id="nav2div">
+                    <img id="pplogo"
+                        src="https://static.vecteezy.com/system/resources/previews/004/384/567/original/volly-ball-icon-line-for-web-presentation-logo-icon-symbol-free-vector.jpg"
+                        alt="pplogo">
                     <p id="myBtn" class="loginp">Login/Signup</p>
-                    <img id="dropdownarrow" src="https://playo-website.gumlet.net/playo_functional/Icons/arrow_light.svg" alt="arrow">
+                    <img id="dropdownarrow"
+                        src="https://static.vecteezy.com/system/resources/previews/004/384/567/original/volly-ball-icon-line-for-web-presentation-logo-icon-symbol-free-vector.jpg"
+                        alt="arrow">
                 </div>
-        
-               
-        
+
+
+
                 <!--    popupwindow -->
                 <div id="modal_container">
-        
+
                     <div id="modal">
-                        <img id="close" src="https://playo-website.gumlet.net/playo_functional/Icons/closeButton.svg" alt="">
-        
+                        <img id="close" src="https://playo-website.gumlet.io/playo-website-v2/logos-icons/cross.svg"
+                            alt="close">
+
                         <div id="login_left_div">
-                            <img width="100%" src="https://playo-website.gumlet.net/icons/login-graphics.png?auto=compress,format" alt="">
+                            <img width="50%"
+                                src="https://s3.ap-south-1.amazonaws.com/playo-website/company/logonew-playo-03.png"
+                                alt="login">
                         </div>
                         <div id="login_right_div">
                             <p id="entermobile">Enter Your Mobile Number</p>
-        
+
                             <div id="user_phone_div">
                                 <div>
                                     <div id="countrySpan">
@@ -58,7 +70,9 @@
                                             <div id="selectCallingCode">
                                                 <span style="font-size: 14px; color: #424242;" id="rem1">IND</span>
                                                 <span style="font-size: 14px; color: #424242;" id="rem2">+91</span>
-                                                <img id="countryDrop" src="https://s3.ap-south-1.amazonaws.com/playo-website/booking/selectCountry.svg" alt="dropdown">
+                                                <img id="countryDrop"
+                                                    src="https://s3.ap-south-1.amazonaws.com/playo-website/booking/selectCountry.svg"
+                                                    alt="dropdown">
                                             </div>
                                         </span>
                                     </div>
@@ -67,15 +81,15 @@
                                     <input id="input" type="number" placeholder="Mobile Number *" value="">
                                     <hr style="margin-top: -1px; margin-left: -65%; width: 220%;">
                                 </span>
-                                
+
                             </div>
-        
+
                             <button id="sendOTP" style="font-size: 1em;">SEND OTP</button>
-                            <button id="giveOTP"  style="font-size: 1em;" >Enter OTP</button>
+                            <button id="giveOTP" style="font-size: 1em;">Enter OTP</button>
                         </div>
                     </div>
                 </div>
-        
+
             </div>
         </div>
 
@@ -89,9 +103,10 @@
 
         </div>
         <div class="input-div">
-            <input type="text" name="" id="search" placeholder="Search for cities, places..." oninput="debouncingFunction(fetchFunction, 1000 )">
-            <img src="https://playo-website.gumlet.net/venues-listing/search.svg" class="search-icon" alt="">
-            <img src="https://playo-website.gumlet.net/venues-listing/cross_hair.svg" class="find-me" alt="">
+            <input type="text" name="" id="search" placeholder="Search for cities, places..."
+                oninput="debouncingFunction(fetchFunction, 1000 )">
+            <img src="https://playo-website.gumlet.io/playo-website-v2/logos-icons/search-icon-dark.svg" class="search-icon" alt="search">
+            <img src="https://playo-website.gumlet.io/playo-website-v2/logos-icons/detect-location-icon.svg" class="find-me" alt="map">
             <p class="locate-me-text">Locate me</p>
         </div>
         <div id="show-results-div">
@@ -114,71 +129,111 @@
 
     </div>
 
-    <div id="footer" >
-        <div id="infooter">
-            <div id="div1">
-                <div id="weblogo">
-                    <a href="index.html"><img src="https://playo-website.gumlet.net/logo/playo-logo-footer-website.png?auto=format,compress&h=100" alt="logo" width="100%" height="100%"></a>
-                </div>
-                <div id="playstore">
-                    <a href="https://play.google.com/store/apps/details?id=com.techmash.playo">
-                        <img src="https://playo-website.gumlet.net/icons/download-android.png?auto=format,compress " >
-                    </a>
-                    <a href="https://apps.apple.com/us/app/playo-local-sports-community/id1018786950?ls=1">
-                        <img src="https://playo-website.gumlet.net/icons/download-ios.png?auto=format,compress" >
-                    </a>
-                </div>
-                <div id="copyright">
-                    <p>©2022 TechMash Solutions Private Limited.<span> All Rights Reserved.</span></p>
-                </div>
-                <div id="loweritems">
-                    <a href="faq.html"><p>FAQs</p></a>
-                    <a href=""><p>Privacy POlicy</p></a>
-                    <a href=""><p>Terms Of Service</p></a>
-                    <a href=""><p>Cancellation & Refund Policy</p></a>
-                    <a href=""><p>Careers</p></a>
-                    <a href=""><p id="hiring">We're Hiring!</p></a>
-                </div>
+    <div id="infooter">
+        <div id="div1">
+            <div id="weblogo">
+                <a href="index.html"><img
+                        src="https://blog.playo.co/wp-content/uploads/2020/11/Logo_dark_500@2x-scaled.jpg" alt="logo"
+                        width="70%"></a>
             </div>
-            <div id="div2">
-                <a href="about.html"><p>About Us</p></a>
-                <a href="partner.html"><p>Partner With Us</p></a>
-                <a href="brandact.html"><p>Brand Activations</p></a>
-                <a href="corporate.html"><p>Corporate Offerings</p></a>
-                <a href="contact.html"><p>contact Us</p></a>
+            <div id="playstore">
+                <a href="https://play.google.com/store/apps/details?id=com.techmash.playo">
+                    <img src="https://img.freepik.com/free-icon/playstore_318-278806.jpg?w=2000" width="70%" alt="play">
+                </a>
+                <a href="https://apps.apple.com/us/app/playo-local-sports-community/id1018786950?ls=1">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/67/App_Store_%28iOS%29.svg/640px-App_Store_%28iOS%29.svg.png"
+                        width="60%" alt="appstore">
+                </a>
             </div>
-            <div id="div3">
-                <a href="venues.html"><p>Book Venues</p></a>
-                <a href="activities.html"><p>Activities</p></a>
-                <a href="blog.html"><p>Blog</p></a>
-                <a href="faq.html"><p>FAQ's</p></a>
+            <div id="copyright">
+                <p>©2022 TechMash Solutions Private Limited.<span> All Rights Reserved.</span></p>
             </div>
-            <div id="div4">
-                <a href="https://www.facebook.com/PlayoApp/"><p>Facebook</p></a>
-                <a href="https://twitter.com/playoApp"><p>Twitter</p></a>
-                <a href="https://www.instagram.com/playoapp/"><p>Instagram</p></a>
-                <a href="https://www.linkedin.com/company/playo"><p>LinkdIn</p></a>
+            <div id="loweritems">
+                <a href="faq.html">
+                    <p>FAQs</p>
+                </a>
+                <a href="">
+                    <p>Privacy POlicy</p>
+                </a>
+                <a href="">
+                    <p>Terms Of Service</p>
+                </a>
+                <a href="">
+                    <p>Cancellation & Refund Policy</p>
+                </a>
+                <a href="">
+                    <p>Careers</p>
+                </a>
+                <a href="">
+                    <p id="hiring">We're Hiring!</p>
+                </a>
             </div>
+        </div>
+        <div id="div2">
+            <a href="about.html">
+                <p>About Us</p>
+            </a>
+            <a href="partner.html">
+                <p>Partner With Us</p>
+            </a>
+            <a href="brandact.html">
+                <p>Brand Activations</p>
+            </a>
+            <a href="corporate.html">
+                <p>Corporate Offerings</p>
+            </a>
+            <a href="contact.html">
+                <p>contact Us</p>
+            </a>
+        </div>
+        <div id="div3">
+            <a href="venues.html">
+                <p>Book Venues</p>
+            </a>
+            <a href="activities.html">
+                <p>Activities</p>
+            </a>
+            <a href="blog.html">
+                <p>Blog</p>
+            </a>
+            <a href="faq.html">
+                <p>FAQ's</p>
+            </a>
+        </div>
+        <div id="div4">
+            <a href="https://www.facebook.com/PlayoApp/">
+                <p>Facebook</p>
+            </a>
+            <a href="https://twitter.com/playoApp">
+                <p>Twitter</p>
+            </a>
+            <a href="https://www.instagram.com/playoapp/">
+                <p>Instagram</p>
+            </a>
+            <a href="https://www.linkedin.com/company/playo">
+                <p>LinkdIn</p>
+            </a>
         </div>
     </div>
 
 
-      <!-- need help button div -->
-      <a href="contact.html">
+    <!-- need help button div -->
+    <a href="contact.html">
         <div id="needhelp">
             <p>Need help?</p>
-            <img id="needhelpiconimage" src="https://playo-website.gumlet.net/venues-listing/maximize.svg" width="10%" height="60%">
+            <img id="needhelpiconimage" src="https://playo-website.gumlet.io/venues-listing/maximize.svg" width="10%"
+                height="60%" alt="need">
         </div>
     </a>
 
 
 
 </body>
+
 </html>
 <!-- Link Script tag -->
-<script src="./scripts/venues.js" >
+<script src="./scripts/venues.js">
 
-    
+
 
 </script>
-
