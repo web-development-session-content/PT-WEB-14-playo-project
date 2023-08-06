@@ -1,7 +1,7 @@
 function navbar(){
     return `<div id="navbar">
                 <a id="active" href="index.html">
-                    <img id="logo" src="https://playo-website.gumlet.net/logo/playo-logo-header-website.png?auto=compress,format&amp;q=90" alt="">
+                    <img id="logo" src="http://web.archive.org/web/20220331095826im_/https://playo-website.gumlet.io/playo-website-v2/logos-icons/Playo+Logo+-+Unfilled.svg?auto=compress,format&q=90" alt="">
                 </a>
 
                 <ul id="nav_options">
