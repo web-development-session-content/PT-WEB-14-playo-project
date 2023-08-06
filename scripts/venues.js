@@ -151,7 +151,7 @@ document.querySelector("#sendOTP").addEventListener("click", ()=>{
 
         let response = await fetch("../database/bookvenue.json");
         let data = await response.json();
-        //console.log(data);
+        console.log(data);
 
         //Writing Function for filter data based on search results
 
