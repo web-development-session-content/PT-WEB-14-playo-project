@@ -28,6 +28,7 @@ let sportImage = {
   Basketball: "./images/basketball.png",
   Badminton: "./images/badminton.png",
   Cricket: "./images/cricket.png",
+  Volleyball: ".images/volleyball.png",
 };
 document.querySelector("#logo").addEventListener("click", () => {
   window.location.href = "index.html";
