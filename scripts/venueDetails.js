@@ -315,15 +315,22 @@ function displayUi(data){
 
 
     //Main Function for filter
-    function filterFunction(value, div, text){
+    // function filterFunction(value, div, text){
+    //     console.log(value);
+    //     let filter_array = data.filter((el)=>{
+    //         let array_value = el.filter_by[0];
+    //         console.log(array_value)
+    //         if(array_value == value){
+    //             return el;
+    //         }
+    //     })
+    function filterFunction(value, div, text) {
         console.log(value);
-        let filter_array = data.filter((el)=>{
+        let filter_array = data.filter((el) => {
             let array_value = el.filter_by[0];
-            //console.log(array_value)
-            if(array_value == value){
-                return el;
-            }
-        })
+            console.log(array_value);
+            return array_value === value; // Return true if the condition is met, false otherwise
+        });
         
         if(filter_array == undefined || filter_array == [] || filter_array.length == 0){
             document.querySelector(".filterbox").style.visibility = "hidden";

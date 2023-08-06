@@ -149,9 +149,9 @@ document.querySelector("#sendOTP").addEventListener("click", ()=>{
         }
 
 
-        let response = await fetch("../database/bookvenue.json");
+        let response = await fetch("http://localhost:3000/venue");
         let data = await response.json();
-        //console.log(data);
+        console.log(data);
 
         //Writing Function for filter data based on search results
 
@@ -173,7 +173,7 @@ document.querySelector("#sendOTP").addEventListener("click", ()=>{
   function debouncingFunction(fetchFunction , delay){
 
     if(inputTag.value.length == 0){
-        document.querySelector("#show-results-div").style.visibility='hidden'
+        document.querySelector("#show-results-div").style.visibility='block'
     }
 
     if(id){
@@ -238,7 +238,7 @@ document.querySelector("#sendOTP").addEventListener("click", ()=>{
 
         mainDiv.addEventListener("click", ()=>{
           
-            window.location.href = "venueDetail.html";
+            window.location.href = "venueDetails.html";
 
             let arr = [];
             arr.push(el);
