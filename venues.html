@@ -89,7 +89,7 @@
 
         </div>
         <div class="input-div">
-            <input type="text" name="" id="search" placeholder="Search for cities, places..." oninput="debouncingFunction(fetchFunction, 1000 )">
+            <input type="text" name="" onchange="onChangeEnter()" id="search" placeholder="Search for cities, places..." oninput="debouncingFunction(fetchFunction, 1000 )">
             <img src="https://playo-website.gumlet.net/venues-listing/search.svg" class="search-icon" alt="">
             <img src="https://playo-website.gumlet.net/venues-listing/cross_hair.svg" class="find-me" alt="">
             <p class="locate-me-text">Locate me</p>
@@ -118,14 +118,14 @@
         <div id="infooter">
             <div id="div1">
                 <div id="weblogo">
-                    <a href="index.html"><img src="https://playo-website.gumlet.net/logo/playo-logo-footer-website.png?auto=format,compress&h=100" alt="logo" width="100%" height="100%"></a>
+                    <a href="index.html"><img src="https://playo-website.gumlet.io/playo-website-v2/Logo+with+Trademark_Filled.png?auto=format,compress&h=100" alt="logo" width="100%" height="100%"></a>
                 </div>
                 <div id="playstore">
                     <a href="https://play.google.com/store/apps/details?id=com.techmash.playo">
-                        <img src="https://playo-website.gumlet.net/icons/download-android.png?auto=format,compress " >
+                        <img src="https://playo.co/_next/image?url=https%3A%2F%2Fplayo-website.gumlet.io%2Fplayo-website-v2%2Fstatic_pages%2FPlay%2Bstore.png&w=1200&q=75" width="140" />
                     </a>
                     <a href="https://apps.apple.com/us/app/playo-local-sports-community/id1018786950?ls=1">
-                        <img src="https://playo-website.gumlet.net/icons/download-ios.png?auto=format,compress" >
+                        <img class="app_download_image" id="appleStoreFooter" src="https://playo.co/_next/image?url=https%3A%2F%2Fplayo-website.gumlet.io%2Fplayo-website-v2%2Fstatic_pages%2Fapple-padding-2x.png&w=1200&q=75" alt="Apple-store">
                     </a>
                 </div>
                 <div id="copyright">
@@ -137,7 +137,7 @@
                     <a href=""><p>Terms Of Service</p></a>
                     <a href=""><p>Cancellation & Refund Policy</p></a>
                     <a href=""><p>Careers</p></a>
-                    <a href=""><p id="hiring">We're Hiring!</p></a>
+                    <!-- <a href=""><p id="hiring">We're Hiring!</p></a> -->
                 </div>
             </div>
             <div id="div2">
@@ -176,9 +176,7 @@
 </body>
 </html>
 <!-- Link Script tag -->
-<script src="./scripts/venues.js" >
-
-    
+<script src="./scripts/venues.js" >    
 
 </script>
 

@@ -47,7 +47,16 @@ function login(){
 
 }
 
-
+function onChangeEnter(){
+    var inputData = document.getElementById("search").value;
+    localStorage.setItem("cityData", inputData);
+    console.log(inputData);
+    window.location.href = "explore.html"
+    // if(inputData[inputData.length-1]==="Enter"){
+    //     console.log("enterClicked");
+    // }
+    
+}
 
 //When user add mobile number to it
 document.querySelector("#sendOTP").addEventListener("click", ()=>{
@@ -149,19 +158,19 @@ document.querySelector("#sendOTP").addEventListener("click", ()=>{
         }
 
 
-        let response = await fetch("../database/bookvenue.json");
-        let data = await response.json();
+        // let response = await fetch("../database/bookvenue.json");
+        // let data = await response.json();
         //console.log(data);
 
         //Writing Function for filter data based on search results
 
-        let filterData = data.filter((el)=>{
-            let regex = new RegExp(`^${search_value}`, "gi" );
-            return el.location.match(regex) || el.name.match(regex);
-        })
+    //     let filterData = data.filter((el)=>{
+    //         let regex = new RegExp(`^${search_value}`, "gi" );
+    //         return el.location.match(regex) || el.name.match(regex);
+    //     })
 
-        console.log(filterData);
-       apprndData(filterData)
+    //     console.log(filterData);
+    //    apprndData(filterData)
     }
 
 
@@ -271,13 +280,27 @@ document.querySelector("#sendOTP").addEventListener("click", ()=>{
 
    
 
+// class work 05/08/2023
 
+//    function a(){
+//     return function b(){
+//         return function c(){
+//             return `${b}+${c}+"hello world"`
+//         }
+//     }
+//    }
 
-   
+//    a(2, 3, 4);
 
+//    let a = (A) => {
+//     return  b = (B) => {
+//         return  c = (C) =>{
+//             return `${A}+${B}+${C}`;
+//         }
+//      }
+//    }
 
-
-
+//    let a = (A) => (B) => (C) => A+B+C;
 
 
 
