@@ -111,14 +111,47 @@ document.querySelector("#sendOTP").addEventListener("click", ()=>{
 
 
 
+let div = document.querySelector(".change-color");
+let text = document.querySelector(".text");
+let applyBtn = document.querySelector("#apply-btn");
+let resetBtn = document.querySelector("#reset-btn");
+var filter_value = "";
 
-
-
-
-
+//Code for reset button
+resetBtn.addEventListener("click", () => {
+    displayUi(data);
+    document.querySelector(".filterbox").style.visibility = "hidden";
+})
 
 
 //Filter Products
+function filterFunction(value, div, text) {
+    console.log(value);
+    let filter_array = data.filter((el) => {
+        let array_value = el.filter_by[0];
+        //console.log(array_value)
+        if (array_value == value) {
+            return el;
+        }
+    })
+
+    if (filter_array == undefined || filter_array == [] || filter_array.length == 0) {
+        document.querySelector(".filterbox").style.visibility = "hidden";
+        div.style.border = "2px solid transparent";
+        text.style.color = "black";
+        let myData = [];
+        displayUi(myData)
+        return
+    }
+
+
+    console.log(filter_array)
+
+    displayUi(filter_array)
+    document.querySelector(".filterbox").style.visibility = "hidden";
+    div.style.border = "2px solid transparent";
+    text.style.color = "black";
+}
 
 //On clicking appear an reappear of div
 document.querySelector(".filterbox").style.visibility = "hidden";
@@ -204,26 +237,6 @@ function displayUi(data){
     })
 }
 
-
-
-
-//Codr for filter function 
-
-    //Selecting
-    let div = document.querySelector(".change-color");
-    let text = document.querySelector(".text");
-    let applyBtn = document.querySelector("#apply-btn");
-    let resetBtn = document.querySelector("#reset-btn");
-    //var filter_value = "";
-
-    //Code for reset button
-    resetBtn.addEventListener("click", ()=>{
-        displayUi(data);
-        document.querySelector(".filterbox").style.visibility = "hidden";
-    })
-
-
-
     //Code For badminton section
     document.querySelector("#badminton").addEventListener("click", ()=>{
         let selectdiv = document.querySelector("#badminton");
@@ -304,43 +317,4 @@ function displayUi(data){
         
     })
 
-
-
-
-
-
-
-
-
-
-
-    //Main Function for filter
-    function filterFunction(value, div, text){
-        console.log(value);
-        let filter_array = data.filter((el)=>{
-            let array_value = el.filter_by[0];
-            //console.log(array_value)
-            if(array_value == value){
-                return el;
-            }
-        })
-        
-        if(filter_array == undefined || filter_array == [] || filter_array.length == 0){
-            document.querySelector(".filterbox").style.visibility = "hidden";
-            div.style.border = "2px solid transparent";
-            text.style.color = "black";
-            let myData = [];
-            displayUi(myData)
-            return
-        }
-
-
-        console.log(filter_array)
-
-        displayUi(filter_array)
-        document.querySelector(".filterbox").style.visibility = "hidden";
-        div.style.border = "2px solid transparent";
-        text.style.color = "black";
-    }
-
-//Codr for filter function 
+  

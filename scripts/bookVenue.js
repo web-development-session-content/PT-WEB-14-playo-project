@@ -60,8 +60,8 @@ document.querySelector("#sendOTP").addEventListener("click", ()=>{
     }
     else{
         localStorage.setItem("mobileNumber", mobNo);
-        // modal_container.style.visibility = "hidden";
-        // document.querySelector(".loginp")
+        modal_container.style.visibility = "hidden";
+         document.querySelector(".loginp")
         document.querySelector("#entermobile").textContent = `We have sent an OTP to ${mobNo}`;
         document.querySelector("#rem1").style.visibility = "hidden";
         document.querySelector("#rem2").style.visibility = "hidden";
@@ -76,7 +76,7 @@ document.querySelector("#sendOTP").addEventListener("click", ()=>{
 
             let otp = document.querySelector("input").value;
             if(otp == "123456"){
-                // alert("success");
+                 alert("success");
                 modal_container.classList.remove("show")
                 document.querySelector("#myBtn").textContent = mobNo;
                 localStorage.setItem("login", true);
@@ -133,9 +133,9 @@ document.querySelector("#onlogoname").textContent = category;
 
 
 //Redirect To Checkout 
-// document.querySelector("#checkoutbutton").addEventListener("click", ()=>{
-//     window.location.href = "pay.html";
-// })
+document.querySelector("#checkoutbutton").addEventListener("click", ()=>{
+    window.location.href = "pay.html";
+})
 
 
 
@@ -438,7 +438,7 @@ function minus(costvalue)
     updatedvalue.innerHTML= count+ " "+ "hr";
 
     cost.innerHTML= "Total cost for these booking - INR"+" " + costvalue;
-    //let presentValue = costvalue;
+    let presentValue = costvalue;
 
 
 
@@ -611,6 +611,6 @@ document.querySelector("#btn2").addEventListener("click", ()=>{
 
 // these for import the footer
 
-    // let foot= document.getElementById("footer");
-    // import footer from "./components/footer.js";
-    // foot.innerHTML=footer();
+    let foot= document.getElementById("footer");
+    import footer from "./components/footer.js";
+    foot.innerHTML=footer();

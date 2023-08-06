@@ -64,24 +64,24 @@
 //Api call for Sports news content start==================>
 
     import appendNews from "../components/appendnews.js";
-   // import apiCall from "../components/apicall.js";
+   import apiCall from "../components/apicall.js";
 
 //    function fetchNews(){
 
-//      //let apiKey_blog = "b140754e118c4b63a8e580772d4446a1";
-//     //let bloglink = `https://newsapi.org/v2/top-headlines?country=in&category=sports&pageSize=10&apiKey=${apiKey_blog}`;
-//     // let response = apiCall(bloglink);
-//     // response.then((res)=>{
-//     //     console.log(res.articles);
-//     //     let appendlocation = document.querySelector(".dynamic-news");
-//     //     appendNews(res.articles, appendlocation);
+     let apiKey_blog = "b140754e118c4b63a8e580772d4446a1";
+    let bloglink = `https://newsapi.org/v2/top-headlines?country=in&category=sports&pageSize=10&apiKey=${apiKey_blog}`;
+     let response = apiCall(bloglink);
+    response.then((res)=>{
+       console.log(res.articles);
+        let appendlocation = document.querySelector(".dynamic-news");
+        appendNews(res.articles, appendlocation);
 
-//     // })
-//     // .catch((e)=>{
-//     //     console.log(e);
-//     // })
+     })
+     .catch((e)=>{
+        console.log(e);
+     })
 
-//     }
+    
 
    
 
@@ -233,10 +233,3 @@
 
 
 //Search Feature in news api End================================>
-
-
-
-
-
-
-

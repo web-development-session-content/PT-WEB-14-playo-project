@@ -25,7 +25,12 @@ function navbarsidebar(){
         <li class="d2" id="logoutBtn">Logout</li>
         </ul>
         </div>
-        
+        /<div id="menu1">
+        <ul type="none">
+        <li><a href="#">My Profile</a></li>
+        <li><a href="#">Logout</a></li>
+        </ul>
+        </div> 
         </div>
         </li>
     
@@ -72,11 +77,3 @@ function navbarsidebar(){
 }
 
 export default navbarsidebar
-
-
-/* <div id="menu1">
-        <ul type="none">
-        <li><a href="#">My Profile</a></li>
-        <li><a href="#">Logout</a></li>
-        </ul>
-        </div> */
