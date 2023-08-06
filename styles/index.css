@@ -49,9 +49,10 @@ body {
   width: 350px;
   height: 50%;
   display: flex;
-  justify-content: end;
+  justify-content: flex-end;
+  align-items: center;
   list-style-type: none;
-  margin: 1.5% 0 0 27.1%;
+  margin-left: 60%;
   padding: 0;
   border: 1px solid transparent;
 }
@@ -95,9 +96,12 @@ a {
 
 .app_download_image {
   width: 170px;
+  height: 70px;
   margin: 0px;
   padding: 0;
+  border-radius: 5px;
 }
+
 
 #footer {
   width: 100%;

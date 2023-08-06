@@ -527,7 +527,7 @@ function addtocart()
    var courtnamediv= document.createElement("div");
    courtnamediv.id="courtnamediv";
    var courtimage= document.createElement("img");
-   courtimage.src="https://playo-website.gumlet.net/icons/court.svg";
+   courtimage.src="https://media.istockphoto.com/id/598252608/photo/3d-illustration-of-indoor-stadium.jpg?s=612x612&w=0&k=20&c=wBclx13USYDMG2eAGvzZ8GI21HFI6i9-AnrLNveNpro=";
    var courtname= document.createElement("p");
    courtname.textContent="6 a Side Court 1";
    courtnamediv.append(courtimage, courtname);
@@ -540,7 +540,7 @@ function addtocart()
     datecart.id="datecart";
     
     var datecartimg= document.createElement("img");
-    datecartimg.src = "https://playo-website.gumlet.net/icons/calendar.svg";
+    datecartimg.src = "https://static.vecteezy.com/system/resources/thumbnails/005/335/317/small/calendar-schedule-date-solid-icon-illustration-logo-template-suitable-for-many-purposes-free-vector.jpg";
     var datename = document.createElement("p");
     datename.textContent= "22, January 2022";
     datecart.append(datecartimg, datename);
@@ -549,7 +549,7 @@ function addtocart()
     timecart.id="timecart";
     timedatecartdiv.append(datecart, timecart);
     var timecartimg = document.createElement("img");
-    timecartimg.src="https://playo-website.gumlet.net/icons/clock.svg";
+    timecartimg.src="https://img.favpng.com/18/17/24/circle-time-png-favpng-wD8iqu3w0Vx7V76zuCuiCwLi1.jpg";
     var timename = document.createElement("p");
     timename.textContent= "06.00 PM to 07.00 PM";
     timecart.append(timecartimg, timename);
@@ -559,7 +559,7 @@ function addtocart()
     var costdiv= document.createElement("div");
     costdiv.id="costdiv";
     var costimg= document.createElement("img");
-    costimg.src="https://playo-website.gumlet.net/icons/money.svg";
+    costimg.src="https://img.myloview.com/posters/rupee-symbol-icon-vector-currency-sign-for-business-and-finance-in-a-flat-color-glyph-pictogram-illustration-700-254428901.jpg";
     var costname=document.createElement("p");
     costname.textContent=" INR "+" "+ count*2200;
     costdiv.append(costimg, costname);

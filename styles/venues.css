@@ -199,12 +199,13 @@
 /* Main body start */
 
      #main{
-        background-image: url("https://playo-website.gumlet.net/booking/bg-venues.png?auto=format,compress");
+        background-image: url("https://www.inderby.org.uk/files/5116/8485/8067/alvaston_tennis_courts_2023_small.jpg");
         min-height: 111vh;
         background-repeat: no-repeat;
         object-fit: cover;
         width: 100%;
         z-index: -1;
+        opacity: .8;
         background-size: 100%;
       
      }
@@ -225,16 +226,17 @@
         font-size: 36px;
         letter-spacing: 0.5px;
         line-height: 46.8px;
-        color: white;
+        color: black;
         margin-right: 7px;
-        font-weight: 300;
+        font-weight: 700;
+        font-style: italic;
      } 
      .text-headline > span:nth-child(2){
         font-family: "Lato", "Open Sans", sans-serif;
         font-size: 36px;
         letter-spacing: 0.5px;
         line-height: 46.8px;
-        color: #ffff00;
+        color: black;
         margin-right: 7px;
         font-weight: 700;
         font-style: italic;
@@ -245,8 +247,9 @@
         font-size: 36px;
         letter-spacing: 0.5px;
         line-height: 46.8px;
-        color: white;
-        font-weight: 300;
+        color:black;
+        font-weight: 700;
+        font-style: italic;
     } 
 
     /* Headline End */
