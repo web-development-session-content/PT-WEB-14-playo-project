@@ -149,7 +149,7 @@ document.querySelector("#sendOTP").addEventListener("click", ()=>{
         }
 
 
-        let response = await fetch("../database/bookvenue.json");
+        let response = await fetch("http://localhost:3000/venue");
         let data = await response.json();
         //console.log(data);
 
@@ -180,8 +180,8 @@ document.querySelector("#sendOTP").addEventListener("click", ()=>{
         clearTimeout(id);
     }
 
-    id = setTimeout(()=>{
-        fetchFunction()
+    id = setTimeout(async()=>{
+      await fetchFunction()
 
     }, delay)
 
@@ -191,7 +191,7 @@ document.querySelector("#sendOTP").addEventListener("click", ()=>{
   async function fetchFunction(){
       
     
-    searchLocation();
+   await searchLocation();
 
   }
 
@@ -238,7 +238,7 @@ document.querySelector("#sendOTP").addEventListener("click", ()=>{
 
         mainDiv.addEventListener("click", ()=>{
           
-            window.location.href = "venueDetail.html";
+            window.location.href = "venueDetails.html";
 
             let arr = [];
             arr.push(el);
@@ -247,8 +247,7 @@ document.querySelector("#sendOTP").addEventListener("click", ()=>{
 
 
 
-       
-        
+  
 
     })
 
