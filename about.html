@@ -6,14 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About us</title>
     <link rel="stylesheet" href="styles/footer.css">
+    <link rel="stylesheet" href="styles/index.css">
     <link rel="stylesheet" href="styles/about.css">
-    <link rel="stylesheet" href="styles/navbarblack.css">
     <style>
        
     </style>
 </head>
 <body>
-    <div id="mynavbar"></div>
+    <div id="navbar_container"></div>
     <!-- these div for about us block -->
     <div id="about_block">
         <div id="aboutus">
@@ -34,8 +34,8 @@
         <div id="leftourstory">
             <div id="upperimage">
                 <p id="ourstorytitle">OUR STORY</p>
-                <img src="https://playo-website.gumlet.net/company/images/about-us-04.svg">
-                <img src="https://playo-website.gumlet.net/company/images/ourstory-image-bg.png">
+                <img class="header-icon" src="https://web.archive.org/web/20210811193139im_/https://playo-website.imgix.net/company/images/about-us-04.svg">
+                <img class="header-background" src="https://web.archive.org/web/20210811193139im_/https://playo-website.imgix.net/company/images/ourstory-image-bg.png">
             </div>
             <div id="lowertext">
                 <p class="ourstorytext">
@@ -50,20 +50,20 @@
         </div>
         <!-- these div for right side image only -->
         <div id="rightourstory">
-            <img src="https://playo-website.gumlet.net/company/images/story1.png?auto=compress,format" width="100%" height="100%">
+            <img src="https://web.archive.org/web/20210811193139im_/https://playo-website.imgix.net/company/images/story1.png?auto=compress,format" width="100%" height="100%">
         </div>
     </div>
 
     <!-- these div for our story second image wala div -->
     <div id="ourstorysecond">
         <div id="oursecondimg">
-            <img src="https://playo-website.gumlet.net/company/images/story2.png?auto=compress,format" width="70%" height="100%">
+            <img src="https://web.archive.org/web/20210811193139im_/https://playo-website.imgix.net/company/images/story2.png?auto=compress,format" width="100%" height="100%">
         </div>
         <div class="oursecondtext">
             <p class="ourstorytext">
                 A belief to create a playground where you can fit-in with other fellow misfits, where access is not limited by narrow<br>
                 memberships walls. A belief that you can play when you want...where you want...how you want, and not have to suffer the<br>
-                agony of wait. A belief to create a world where you can lose yourself and yet rediscover yourself, where you can be both the victor and the vanquished and laugh at being both.<br>
+                agony of wait. A belief to create a world where you can lose yourself and yet rediscover yourself, where you can be both the victor and the vanquished and laugh at being both.
                  A belief...that happiness is a dish best served on the field.
             </p>
         </div>
@@ -72,9 +72,9 @@
     <!-- these div for remaining text of ourstory -->
     <div id="ourstorylast">
         <p class="ourstorytext">
-            We warmly welcome you to Playo, your singular destination for sports, fitness, fun and all things recreational. Come, relive those cherished childhood moments when you <br>
-            high fives or wept as one for a loss. Time to get your lovable varsity jersey out and give your neighbour a shout or go challenge your colleague...better still make a new.<br>
-            Addicted to Play...and create your own happily ever after!
+            We warmly welcome you to Playo, your singular destination for sports, fitness, fun and all things recreational. Come, relive those cherished childhood moments when you exchanged
+            high fives or wept as one for a loss. Time to get your lovable varsity jersey out and give your neighbour a shout or go challenge your colleague...better still make a new.
+            Get Addicted to Play...and create your own happily ever after!
         </p>
     </div>
 
@@ -85,13 +85,10 @@
 
 <script  type="module">
     let foot= document.getElementById("footer");
-
     import footer from "./components/footer.js";
-
     foot.innerHTML= footer();
 
-
-    let headr= document.getElementById("mynavbar");
-    import navbar from "./components/navbarblack.js";
-    headr.innerHTML= navbar();
+    import navbar from "./components/navbar.js"
+    let navbar_container = document.getElementById("navbar_container");
+    navbar_container.innerHTML = navbar();
 </script>

@@ -14,8 +14,8 @@ a{
 }
 
 #div1{
-    width:45%;
-    height:90%;
+    width:49%;
+    height:80%;
     margin-top: 2%;
 }
 
@@ -25,9 +25,10 @@ a{
     margin-top: 2%;
     margin-left: 2%;
     color: rgb(212, 212, 212);
-    font-size: 14px;
+    font-size: 13px;
     line-height: 12px;
     font-family: Lato, sans-serif;
+    font-weight: 700;
 }
 #div3{
     width:10%;
@@ -35,9 +36,10 @@ a{
     margin-top: 2%;
     margin-left: 10%;
     color: rgb(212, 212, 212);
-    font-size: 14px;
+    font-size: 13px;
     line-height: 12px;
     font-family: Lato, sans-serif;
+    font-weight: 700;
 }
 #div4{
     width:10%;
@@ -45,16 +47,16 @@ a{
     margin-top: 2%;
     margin-left: 10%;
     color: rgb(212, 212, 212);
-    font-size: 14px;
+    font-size: 13px;
+    font-weight: 700;
     line-height: 12px;
     font-family: Lato, sans-serif;
 }
 
 /* these css designs for left side logo and links below it */
-#weblogo{
-    width:25%;
-    height:28%;
-    margin-left: 15%;
+#weblogo>img{
+    width:150px;
+    margin-left: 6%;
 }
 #playstore{
     width:23%;
@@ -62,13 +64,13 @@ a{
     display: flex;
     justify-content: center;
     justify-content: space-evenly;
-    margin-left: 15%;
+    margin-left: 6%;
     margin-top: 3%;
 }
 #copyright{
     width:70%;
     height:10%;
-    margin-left: 12%;
+    margin-left: 8%;
     font-size: 13px;
     font-style: italic;
     line-height: 0%;
@@ -82,15 +84,25 @@ a{
     width:88%;
     height:20%;
     display: flex;
-    margin-left: 12%;
+    margin-left: 8%;
     color:white;
-    font-weight: 300;
     font-family: Calibri Light;
     /* line-height: 0%; */
     text-align: flex-start;
     justify-content: space-between;
+    font-family: Lato,sans-serif;
+    font-size: 13px;
+    font-weight: 500;
+}
+#loweritems a>p{
+    font-size: smaller;
+    margin: 10px
 }
 #hiring{
     background-color:#4daa0b ;
+    width: 80px;
+    padding: 5px;
+    border-radius: 2px;
+    line-height: 10px;
     /* line-height: 0%; */
 }

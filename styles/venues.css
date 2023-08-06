@@ -50,16 +50,17 @@
     }
     
     #nav2div{
-        margin-left: 67.5%; margin-top: 5px;
-        display: flex; margin-top: 10px;
+        margin-left: 65.5%; 
+        margin-top: 5px;
+        display: flex; 
+        margin-top: 10px;
     }
-    
-    .loginp{
-        margin-left: 10px; 
-        line-height: 10px;
-        font-size: 14px; 
+
+    #nav2div>a{
+        margin-right: 50px;
+        font-size: 1 rem;
+        color: #545252;
         font-family: Arial, Helvetica, sans-serif; 
-        color: #5c5c5c;
     }
 
     #nav2div:hover{
@@ -84,7 +85,7 @@
         height: 100vh;
         width: 100%;
         background-color: rgba(0, 0, 0, 0.3);
-        z-index: 1;
+        z-index: 100000000;
         opacity: 0;
         pointer-events: none;
     }
@@ -199,25 +200,30 @@
 /* Main body start */
 
      #main{
-        background-image: url("https://playo-website.gumlet.net/booking/bg-venues.png?auto=format,compress");
+        /* background-image: url("https://playo-website.gumlet.net/booking/bg-venues.png?auto=format,compress");
         min-height: 111vh;
         background-repeat: no-repeat;
         object-fit: cover;
         width: 100%;
         z-index: -1;
         background-size: 100%;
-      
+        position: relative; */
      }
 
      /* Headline start */
      .text-headline{
-         height: 46px;
-         z-index: 5;
-         margin-top: 119px;
-         display: flex;
-         flex-direction: row;
-         justify-content: center;
-         align-items: center;
+        /* height: 130px;
+        z-index: 5;
+        margin-top: 119px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        z-index: 1000;
+        top: 0;
+        left: 0;
+        right: 0; */
      }
 
      .text-headline > span:nth-child(1){
@@ -253,14 +259,20 @@
     
 
     /* Input div start */
-
-    .input-div{
-        margin-top: 32px;
-        height: 50px;
+    .venue-search-bar-data {
+        position: absolute;
+        z-index: 1000;
+        top: 25vh;
+        left: 0;
+        right: 0;
+    }
+    .venue-search-bar-data .text-headline {
+        text-align: center;
+    }
+    .venue-search-bar-data .input-div {
+        text-align: center;
         position: relative;
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
+        margin-top: 15px;
     }
 
     /* Input box */
@@ -285,16 +297,15 @@
     }
 
     /* Search Icon */
-    .search-icon{
+    .search_img{
         position: absolute;
-        width: 17px;
-        left: 26%;
-        top: 16px;
-       
+        width: 20px;
+        left: 26vw;
+        top: 15px;
     }
 
     /* Search Location */
-    .find-me{
+    .locate{
         position: absolute;
         width: 16px;
         right: 32.5%;
@@ -312,6 +323,7 @@
         color: #939393;
         right: 27%;
         cursor: pointer;
+        top: 0;
     }
 
 
@@ -414,5 +426,6 @@
 }
 
 #needhelpiconimage{
-    margin-top: 4%;
+    margin-top: 2%;
+    width: 20px;
 }

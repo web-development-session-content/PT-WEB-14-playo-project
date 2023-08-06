@@ -6,8 +6,9 @@ body{
     width:100%;
     height:1000px;
     display: flex;
-    margin-top: 5px;
+    /* margin-top: 5px; */
     border: 1px solid transparent;
+    padding-top: 90px;
 }
 
 
@@ -15,7 +16,7 @@ body{
  /* Navbar start */
  #navbar{
     height: 66px;
-    background-color: #FEFFFE;
+    background-color: black;
     width: 100%;
     
 }

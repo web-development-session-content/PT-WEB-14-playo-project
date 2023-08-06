@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Book Venue</title>
+    <link rel="stylesheet" href="styles/index.css">
     <link rel="stylesheet" href="styles/footer.css">
     <link rel="stylesheet" href="styles/bookVenue.css">
     <script src="https://checkout.razorpay.com/v1/checkout.js"></script>
@@ -16,7 +17,7 @@
     <div id="navbar" style="margin-bottom: 15px;">
         <div id="explorenavbar">
 
-            <div id="logodiv" >
+            <!-- <div id="logodiv" >
                 <img id="logo" src="https://playo-website.imgix.net/company/logo1.png?auto=compress,format" alt="playo logo">
             </div>
     
@@ -24,7 +25,7 @@
                 <img id="pplogo" src="https://playo-website.gumlet.net/playo_functional/Icons/user_blank.svg" alt="">
                 <p id="myBtn" class="loginp">Login/Signup</p>
                 <img id="dropdownarrow" src="https://playo-website.gumlet.net/playo_functional/Icons/arrow_light.svg" alt="arrow">
-            </div>
+            </div> -->
     
            
     
@@ -178,7 +179,7 @@
         </div>
     </div>
     <div id="footer">
-        <div id="infooter">
+        <!-- <div id="infooter">
             <div id="div1">
                 <div id="weblogo">
                     <a href="index.html"><img src="https://playo-website.gumlet.net/logo/playo-logo-footer-website.png?auto=format,compress&h=100" alt="logo" width="100%" height="100%"></a>
@@ -222,14 +223,14 @@
                 <a href="https://www.instagram.com/playoapp/"><p>Instagram</p></a>
                 <a href="https://www.linkedin.com/company/playo"><p>LinkdIn</p></a>
             </div>
-        </div>
+        </div> -->
     </div>
 
      <!-- need help button div -->
      <a href="contact.html">
         <div id="needhelp">
             <p>Need help?</p>
-            <img id="needhelpiconimage" src="https://playo-website.gumlet.net/venues-listing/maximize.svg" width="10%" height="60%">
+            <img id="needhelpiconimage" src="https://web.archive.org/web/20210506211453im_/https://playo-website.imgix.net/venues-listing/maximize.svg" alt="" data-reactid="149">
         </div>
     </a>
 
@@ -239,6 +240,15 @@
 </html>
 
 <script src= ./scripts/bookVenue.js >
+</script>
+<script type="module">
+    import navbar from "./components/navbar.js"
+    import footer from "./components/footer.js"
 
+    let container = document.querySelector("#footer");
+    container.innerHTML = footer();
+
+    let navbar_container = document.getElementById("explorenavbar");
+    navbar_container.innerHTML = navbar();
 
 </script>

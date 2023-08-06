@@ -7,6 +7,7 @@ body{
     height:280px;
     background-color: #6da600;
     border: 1px solid transparent;
+    padding-top: 70px;
 }
 #aboutus{
     width:50%;
@@ -25,13 +26,13 @@ body{
     font-size: 50px;
     justify-content: flex-end;
     color:white;
-    font-family: loto, sans-serif;
+    font-family: Titillium Web,sans-serif;
     font-weight: bolder;
 }
 #abt_sub{
     color:white;
-    font-family: loto, sans-serif;
-    font-size: 20px;
+    font-family: Titillium Web,sans-serif;
+    font-size: 18px;
 }
 #ourstory{
     display: flex;
@@ -64,17 +65,18 @@ body{
     border:1px solid  transparent;
 }
 #ourstorytitle{
-    color:rgb(97, 96, 96);
+    color:#424242;
     font-size: 30px;
     line-height: 0%;
-    font-family: loto, sans-serif;
+    font-family: Titillium Web,sans-serif;
     font-weight: bolder;
 }
 .ourstorytext{
     font-family: loto, sans-serif;
-    color:rgb(97, 96, 96);
+    color:#424242;
     font-size: 16px;
     line-height: 30px;
+    margin: 0 0 24px -24px;
 }
 #ourstorysecond{
     width:100%;
@@ -99,4 +101,7 @@ body{
     height:150px;
     border-bottom: 5px solid rgb(189, 189, 189);
 
+}
+#navbar {
+    background-color: black;
 }
