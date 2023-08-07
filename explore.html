@@ -131,7 +131,7 @@
 
 
 
-<script  >
+<script  type="module">
   
 
   // for (let x in data) {
@@ -213,7 +213,10 @@
 
 
 
+  import footer from "./components/footer.js"
 
+let container = document.querySelector("#infooter");
+container.innerHTML = footer();
 
 
 

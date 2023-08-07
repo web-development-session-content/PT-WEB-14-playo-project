@@ -57,14 +57,27 @@ a{
     margin-left: 15%;
 }
 #playstore{
-    width:23%;
-    height:27%;
+    width:70%;
+    height:30%;
     display: flex;
     justify-content: center;
     justify-content: space-evenly;
     margin-left: 15%;
     margin-top: 3%;
+    /* border: 2px solid red; */
+    /* padding: 0;
+    position: relative; */
 }
+
+#playstore img{
+    width: 256px;
+    height: 96px;
+    
+    /* border: 1px solid black; */
+    
+}
+
+
 #copyright{
     width:70%;
     height:10%;

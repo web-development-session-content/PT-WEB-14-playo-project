@@ -199,7 +199,7 @@
 /* Main body start */
 
      #main{
-        background-image: url("https://playo-website.gumlet.net/booking/bg-venues.png?auto=format,compress");
+        background-image: url("https://web.archive.org/web/20220704055452im_/https://playo-website.gumlet.io/booking/bg-venues.png?auto=format,compress");
         min-height: 111vh;
         background-repeat: no-repeat;
         object-fit: cover;
@@ -375,6 +375,7 @@
         box-sizing: border-box;
     }
 
+   
 
 /* Append Search Results Div End */
 
