@@ -641,7 +641,7 @@ document.querySelector("#searchbtn").addEventListener("click",()=>{
       city: document.getElementById("typesearch").value,
      
     };
-
+console.log(data)
     let location = localStorage.setItem("name", JSON.stringify(data));
     window.location.href = "explore.html";
 })

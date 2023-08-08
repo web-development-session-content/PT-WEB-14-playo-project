@@ -75,6 +75,13 @@ a{
     font-family: Lato, sans-serif;
     color:rgb(128, 128, 128);
 }
+#playstore img{
+    max-width: 90px;
+}
+#playstore img{
+    max-height: 50px;
+    min-height: 50px;
+}
 #copy{
     font-size: 10px;
 }
@@ -93,4 +100,12 @@ a{
 #hiring{
     background-color:#4daa0b ;
     /* line-height: 0%; */
+}
+
+#playstore img{
+    max-width: 90px;
+}
+#playstore img{
+    max-height: 50px;
+    min-height: 50px;
 }

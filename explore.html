@@ -83,14 +83,14 @@
       <div id="infooter">
         <div id="div1">
             <div id="weblogo">
-                <a href="index.html"><img src="https://playo-website.gumlet.net/logo/playo-logo-footer-website.png?auto=format,compress&h=100" alt="logo" width="100%" height="100%"></a>
+                <a href="index.html"><img src="https://playo-website.gumlet.io/playo-website-v2/Logo+with+Trademark_Filled.png" alt="logo" width="100%" height="100%"></a>
             </div>
             <div id="playstore">
                 <a href="https://play.google.com/store/apps/details?id=com.techmash.playo">
-                    <img src="https://playo-website.gumlet.net/icons/download-android.png?auto=format,compress " >
+                    <img src="https://playo.co/_next/image?url=https%3A%2F%2Fplayo-website.gumlet.io%2Fplayo-website-v2%2Fstatic_pages%2FPlay%2Bstore.png&w=1920&q=75" >
                 </a>
                 <a href="https://apps.apple.com/us/app/playo-local-sports-community/id1018786950?ls=1">
-                    <img src="https://playo-website.gumlet.net/icons/download-ios.png?auto=format,compress" >
+                    <img src="https://playo.co/_next/image?url=https%3A%2F%2Fplayo-website.gumlet.io%2Fplayo-website-v2%2Fstatic_pages%2Fapple-padding-2x.png&w=1920&q=75" >
                 </a>
             </div>
             <div id="copyright">
@@ -132,87 +132,85 @@
 
 
 <script  >
-  
+  /*
+  let data = JSON.parse(localStorage.getItem("name"));
 
-  // for (let x in data) {
-  //   var cityx = data[x];
-  // }
-  // console.log(cityx);
+  for (let x in data) {
+    var cityx = data[x];
+  }
+  console.log(cityx);
 
-  // let con = document.getElementById("con");
+  let con = document.getElementById("con");
 
-  // async function add(url) {
-  //   try {
-  //     var url = `http://127.0.0.1:5000/playo/cities`;
-  //     let response = await fetch(url, {
-  //       method: "GET",
-  //       headers: {
-  //         "Content-Type": "application/json",
-  //       },
-  //     });
-  //     let d = await response.json();
-  //     console.log("d:", d);
-  //     display(d);
-  //   } catch (err) {
-  //     console.log("err:", err);
-  //   }
-  // }
-
-
-  // display = (e) => {
-  //   //  console.log('e:', e)
-  //   e.forEach((el) => {
-  //     for (x in data) {
-  //       var c = data[x];
-  //     }
-
-  //     //   var div = document.getElementById("places");
-  //     //   // div.setAttribute("id","places")
-  //     //   var location= document.createElement("p");
-  //     //   location.innerText= el.location
-  //     //   let img= document.createElement("img")
-  //     //   img.src= el.image
-  //     //   img.setAttribute("id","conimage")
-
-  //     //   let timing= document.createElement("p")
-  //     //   timing.innerText=el.timing
-
-  //     // // console.log(el.timing)
-
-  //     //   var name = document.createElement("p");
-  //     //   name.innerText=el.name
-
-  //     //   Book= "BOOKABLE",
-  //     //   safe= "Safe & Hygiene"
-
-  //     if (el.city === c) {
-  //       let y = `  <div onclick="details(${el.id})" id= "places">
-  //       <div>
-  //         <img src="${el.image}" alt="" class="conimage">
-  //         <p class="imgtext">Coaching</p>
-  //       </div>
-  //       <p class="highlighttext">${el.name}</p>
-  //       <p class="location">${el.location}</p>
-  //       <p class="timing"><img src="./images/clock.png" alt="" class="clockicon">${el.timing}</p>
-  //       <p class="coaching">${el.name}  Coaching</p>
-  //     </div>`;
-
-  //       let place = document.getElementById("place");
-  //       place.setAttribute("class", "bold");
-  //       place.innerHTML = el.city;
-  //       con.innerHTML += y;
-  //     } else {
-  //       console.log("err");
-  //     }
-  //   });
-  // };
+  async function add(url) {
+    try {
+      var url = `http://127.0.0.1:5000/playo/cities`;
+      let response = await fetch(url, {
+        method: "GET",
+        headers: {
+          "Content-Type": "application/json",
+        },
+      });
+      let d = await response.json();
+      console.log("d:", d);
+      display(d);
+    } catch (err) {
+      console.log("err:", err);
+    }
+  }
 
 
-  // add();
- 
+  display = (e) => {
+    //  console.log('e:', e)
+    e.forEach((el) => {
+      for (x in data) {
+        var c = data[x];
+      }
+
+        var div = document.getElementById("places");
+        // div.setAttribute("id","places")
+        var location= document.createElement("p");
+        location.innerText= el.location
+        let img= document.createElement("img")
+        img.src= el.image
+        img.setAttribute("id","conimage")
+
+        let timing= document.createElement("p")
+        timing.innerText=el.timing
+
+      // console.log(el.timing)
+
+        var name = document.createElement("p");
+        name.innerText=el.name
+
+        Book= "BOOKABLE",
+        safe= "Safe & Hygiene"
+
+      if (el.city === c) {
+        let y = `  <div onclick="details(${el.id})" id= "places">
+        <div>
+          <img src="${el.image}" alt="" class="conimage">
+          <p class="imgtext">Coaching</p>
+        </div>
+        <p class="highlighttext">${el.name}</p>
+        <p class="location">${el.location}</p>
+        <p class="timing"><img src="./images/clock.png" alt="" class="clockicon">${el.timing}</p>
+        <p class="coaching">${el.name}  Coaching</p>
+      </div>`;
+
+        let place = document.getElementById("place");
+        place.setAttribute("class", "bold");
+        place.innerHTML = el.city;
+        con.innerHTML += y;
+      } else {
+        console.log("err");
+      }
+    });
+  };
 
 
-
+  add();
+  */
 
 
 
@@ -242,7 +240,7 @@
 
         let response = await fetch("./database/activityData.json");
         let data = await response.json();
-        //console.log(data);
+        console.log(data);
 
         //Writing Function for filter data based on search results
 
